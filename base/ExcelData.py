@@ -248,8 +248,8 @@ class Data:
             #     # 2、增加描述
             #     data.update({TestCases.CASES_DESC: desc})
 
-            # data_list.extend(tmp_data_list)
-            data_list.append(self.get_run_data(tc_id))
+            data_list.extend(self.get_run_data(tc_id))
+            # data_list.append(self.get_run_data(tc_id))
         self.log.debug("获取CaseData运行测试个数{}，数据内容{}".format(len(data_list), data_list))
         return data_list
 
