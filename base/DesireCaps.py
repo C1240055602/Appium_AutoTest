@@ -34,5 +34,6 @@ def appium_desired_caps():
     driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
     driver.implicitly_wait(20)
+    driver.get_window_size()
 
     return driver

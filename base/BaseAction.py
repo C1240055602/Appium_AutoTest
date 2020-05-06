@@ -92,7 +92,7 @@ class Action:
             loc = self.by_xpath(value)
         loc.click()
 
-    def assert_toast_result(self,**kwargs):
+    def assert_toast_result(self, **kwargs):
         toast_result = self.is_toast_exist(**kwargs)
         assert toast_result
         # try:
@@ -101,3 +101,43 @@ class Action:
         #     png = self.driver.get_screenshot_as_png()
         #     allure.attach(png,"toast错误",allure.attachment_type.PNG)
         #     raise e
+
+    # 元素滑动
+    def swipeUp(self, t=500, n=1):
+        """向上滑动屏幕"""
+        screen = self.get_window_size()
+        x1 = screen['width'] * 0.5  # x坐标
+        y1 = screen['height'] * 0.75  # 起始y坐标
+        y2 = screen['height'] * 0.25  # 终点y坐标
+        for i in range(n):
+            self.swipe(x1, y1, x1, y2, t)
+
+    def swipeDown(self, t=500, n=1):
+        """向下滑动屏幕"""
+        screen = self.get_window_size()
+        x1 = screen['width'] * 0.5  # x坐标
+        y1 = screen['height'] * 0.25  # 起始y坐标
+        y2 = screen['height'] * 0.75  # 终点y坐标
+        for i in range(n):
+            self.swipe(x1, y1, x1, y2, t)
+
+    def swipLeft(self, t=500, n=1):
+        """向左滑动屏幕"""
+        screen = self.get_window_size()
+        x1 = screen['width'] * 0.75
+        y1 = screen['height'] * 0.5
+        x2 = screen['width'] * 0.25
+        for i in range(n):
+            self.swipe(x1, y1, x2, y1, t)
+
+    def swipRight(self, t=500, n=1):
+        """向右滑动屏幕"""
+        screen = self.get_window_size()
+        x1 = screen['width'] * 0.25
+        y1 = screen['height'] * 0.5
+        x2 = screen['width'] * 0.75
+        for i in range(n):
+            self.swipe(x1, y1, x2, y1, t)
+
+    def get_window_size(self, screen):
+        return screen
