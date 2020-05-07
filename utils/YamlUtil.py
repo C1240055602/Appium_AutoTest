@@ -23,10 +23,10 @@ class YamlReader:
         单个文档
         :return:
         """
-        if not  self._data:
-            with open(self.yamlf, "r", encoding='utf-8') as f:
-                 self._data = yaml.safe_load(f)
-        return  self._data
+        if not self._data:
+            with open(self.yamlf, "r", encoding="utf-8") as f:
+                self._data = yaml.safe_load(f)
+        return self._data
 
     def data_all(self):
         """
@@ -35,5 +35,5 @@ class YamlReader:
         """
         if not self._data_all:
             with open(self.yamlf, "r", encoding="utf-8") as f:
-                 self._data_all = list(yaml.safe_load_all(f))
+                self._data_all = list(yaml.safe_load_all(f))
         return self._data_all

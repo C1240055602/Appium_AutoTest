@@ -3,3 +3,21 @@
 2020-05-06 00:59:35,133 - Base_Page - INFO - 获取toast内容为：账号或密码错误
 2020-05-06 01:56:50,874 - Base_Page - INFO - 获取toast内容为：账号或密码错误
 2020-05-06 10:08:20,815 - Base_Page - INFO - 获取toast内容为：账号或密码错误
+2020-05-06 10:51:09,832 - operate - INFO - 执行用例内容:{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误'}
+2020-05-06 10:51:17,923 - Base_Page - INFO - 获取toast内容为：账号或密码错误
+2020-05-06 21:31:21,206 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - 获取TestCases表测试个数1，数据内容[{'序号': 1.0, '描述': '登录功能测试', 'TC_ID': 'TC_Login', '是否运行': 'y', '备注': '登录功能测试'}]
+2020-05-06 21:31:21,209 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - 获取CaseData运行测试个数1，数据内容[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}]
+2020-05-06 21:31:42,220 - start_appium - INFO - port 4723 is not used
+2020-05-06 21:57:35,767 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - 获取TestCases表测试个数1，数据内容[{'序号': 1.0, '描述': '登录功能测试', 'TC_ID': 'TC_Login', '是否运行': 'y', '备注': '登录功能测试'}]
+2020-05-06 21:57:35,771 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - 获取CaseData运行测试个数1，数据内容[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}]
+2020-05-06 21:57:56,781 - start_appium - INFO - port 4723 is not used
+2020-05-06 21:58:11,189 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - 获取TestCases表测试个数1，数据内容[{'序号': 1.0, '描述': '登录功能测试', 'TC_ID': 'TC_Login', '是否运行': 'y', '备注': '登录功能测试'}]
+2020-05-06 21:58:11,193 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - 获取CaseData运行测试个数1，数据内容[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}]
+2020-05-06 21:58:11,197 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - 获取TestCases表测试个数1，数据内容[{'序号': 1.0, '描述': '登录功能测试', 'TC_ID': 'TC_Login', '是否运行': 'y', '备注': '登录功能测试'}]
+2020-05-06 21:58:11,200 - start_appium - INFO - port 4723 is used!
+2020-05-06 21:58:11,200 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - 获取CaseData运行测试个数1，数据内容[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}]
+2020-05-06 21:58:11,313 - allure_generate - INFO - 报告地址C:\Users\cjj\PycharmProjects\Appium_AutoTest\report\result\华为mate9
+2020-05-06 21:58:13,220 - start_appium - INFO - port 4725 is not used
+2020-05-06 21:58:13,345 - allure_generate - INFO - 报告地址C:\Users\cjj\PycharmProjects\Appium_AutoTest\report\result\华为mate10
+2020-05-06 21:58:14,242 - allure_generate - INFO - 报告地址C:\Users\cjj\PycharmProjects\Appium_AutoTest\report\html\华为mate9
+2020-05-06 21:58:16,299 - allure_generate - INFO - 报告地址C:\Users\cjj\PycharmProjects\Appium_AutoTest\report\html\华为mate10

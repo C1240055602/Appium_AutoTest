@@ -1,6 +1,8 @@
 from utils.LogUtil import my_log
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
+import allure
+import datetime
 
 
 # 1、定义类
@@ -10,11 +12,12 @@ class Action:
         self.log = my_log("Base_Page")
 
     # 2、定义方法
+
     # 元素定位
-    # byid, byxpath
-    # 元素等待封装方法
+    # byid,byxpath
+    # 元素等待方法
     # 1、click
-    # 2、send_key
+    # 2、send_keys
     # 3、toast
 
     # click  id,xpath
@@ -64,8 +67,8 @@ class Action:
         try:
             WebDriverWait(self.driver, timeout, poll).until(lambda x: x.find_element(by, value))
             return self.driver.find_element(by, value)
-        except Exception as  e:
-            self.log.error("没有找到该元素: {}", format(e))
+        except Exception as e:
+            self.log.error("没有找到该元素：{}".format(e))
 
     # toast
     def is_toast_exist(self, **kwargs):
@@ -84,12 +87,13 @@ class Action:
             return False
 
     def click_btn(self, **kwargs):
-        # 根据by类型，进行by_if,by_xpath方法调用
+        # 根据by类型，进行by_id,by_xpath方法调用
         by, value = kwargs["by"], kwargs["value"]
         if by == "id":
             loc = self.by_id(value)
         elif by == "xpath":
             loc = self.by_xpath(value)
+
         loc.click()
 
     def assert_toast_result(self, **kwargs):
@@ -102,42 +106,62 @@ class Action:
         #     allure.attach(png,"toast错误",allure.attachment_type.PNG)
         #     raise e
 
-    # 元素滑动
-    def swipeUp(self, t=500, n=1):
-        """向上滑动屏幕"""
-        screen = self.get_window_size()
-        x1 = screen['width'] * 0.5  # x坐标
-        y1 = screen['height'] * 0.75  # 起始y坐标
-        y2 = screen['height'] * 0.25  # 终点y坐标
-        for i in range(n):
-            self.swipe(x1, y1, x1, y2, t)
 
-    def swipeDown(self, t=500, n=1):
-        """向下滑动屏幕"""
-        screen = self.get_window_size()
-        x1 = screen['width'] * 0.5  # x坐标
-        y1 = screen['height'] * 0.25  # 起始y坐标
-        y2 = screen['height'] * 0.75  # 终点y坐标
-        for i in range(n):
-            self.swipe(x1, y1, x1, y2, t)
+# 定义装饰器
+# 1、定义装饰2层函数
+def screenshot_allure(func):
+    def get_err_screenshot(self, *args, **kwargs):
+        # 2、定义内部函数，拍图操作
+        try:
+            func(self, *args, **kwargs)
+        except Exception as e:
+            png = self.driver.get_screenshot_as_png()
+            name = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            allure.attach(png, name, allure.attachment_type.PNG)
+            raise e
 
-    def swipLeft(self, t=500, n=1):
-        """向左滑动屏幕"""
-        screen = self.get_window_size()
-        x1 = screen['width'] * 0.75
-        y1 = screen['height'] * 0.5
-        x2 = screen['width'] * 0.25
-        for i in range(n):
-            self.swipe(x1, y1, x2, y1, t)
+    # 3、返回内部函数名称
+    return get_err_screenshot
+# 4、重构toast断言
+# 5、调用装饰器@
 
-    def swipRight(self, t=500, n=1):
-        """向右滑动屏幕"""
-        screen = self.get_window_size()
-        x1 = screen['width'] * 0.25
-        y1 = screen['height'] * 0.5
-        x2 = screen['width'] * 0.75
-        for i in range(n):
-            self.swipe(x1, y1, x2, y1, t)
 
-    def get_window_size(self, screen):
-        return screen
+# # 元素滑动
+# def swipeUp(self, t=500, n=1):
+#     """向上滑动屏幕"""
+#     screen = self.get_window_size()
+#     x1 = screen['width'] * 0.5  # x坐标
+#     y1 = screen['height'] * 0.75  # 起始y坐标
+#     y2 = screen['height'] * 0.25  # 终点y坐标
+#     for i in range(n):
+#         self.swipe(x1, y1, x1, y2, t)
+#
+# def swipeDown(self, t=500, n=1):
+#     """向下滑动屏幕"""
+#     screen = self.get_window_size()
+#     x1 = screen['width'] * 0.5  # x坐标
+#     y1 = screen['height'] * 0.25  # 起始y坐标
+#     y2 = screen['height'] * 0.75  # 终点y坐标
+#     for i in range(n):
+#         self.swipe(x1, y1, x1, y2, t)
+#
+# def swipLeft(self, t=500, n=1):
+#     """向左滑动屏幕"""
+#     screen = self.get_window_size()
+#     x1 = screen['width'] * 0.75
+#     y1 = screen['height'] * 0.5
+#     x2 = screen['width'] * 0.25
+#     for i in range(n):
+#         self.swipe(x1, y1, x2, y1, t)
+#
+# def swipRight(self, t=500, n=1):
+#     """向右滑动屏幕"""
+#     screen = self.get_window_size()
+#     x1 = screen['width'] * 0.25
+#     y1 = screen['height'] * 0.5
+#     x2 = screen['width'] * 0.75
+#     for i in range(n):
+#         self.swipe(x1, y1, x2, y1, t)
+#
+# def get_window_size(self, screen):
+#     return screen

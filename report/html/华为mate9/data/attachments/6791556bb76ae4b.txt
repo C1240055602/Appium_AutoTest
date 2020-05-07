@@ -1,0 +1,1 @@
+INFO     start_appium:StartAppium.py:18 port 4723 is used!

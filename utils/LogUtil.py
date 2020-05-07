@@ -47,7 +47,7 @@ log_extension = ".log"
 logfile = os.path.join(log_path, current_date + log_extension)
 print(logfile)
 # log_level
-loglevel = "info"
+loglevel = "debug"
 
 
 # 2、对外方法，初始log工具类，提供其它类使用

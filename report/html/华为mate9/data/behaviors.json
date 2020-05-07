@@ -1,0 +1,17 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_run[run_case0]",
+    "uid" : "b4024187766dd45c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1588773491198,
+      "stop" : 1588773491198,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}" ]
+  } ]
+}

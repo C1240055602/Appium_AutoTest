@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-0LL74L3",
+    "children" : [ {
+      "name" : "2212-MainThread",
+      "children" : [ {
+        "name" : "test_run[run_case0]",
+        "uid" : "5bf910dc925aac1b",
+        "parentUid" : "f8d78ac71888c278a012418de0af2f05",
+        "status" : "broken",
+        "time" : {
+          "start" : 1588773493222,
+          "stop" : 1588773493222,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}" ]
+      } ],
+      "uid" : "f8d78ac71888c278a012418de0af2f05"
+    } ],
+    "uid" : "b7cd87cc76931d8f4b7cec9c2554c77b"
+  } ]
+}
