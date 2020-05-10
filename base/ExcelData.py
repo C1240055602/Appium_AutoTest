@@ -238,7 +238,9 @@ class Data:
         for case in cases:
             tc_id = case[CaseData.DATA_TC_ID]
             tmp_data_list = self.get_run_data(tc_id)
+            # 描述
             desc = case[TestCases.CASES_DESC]
+            # 备注
             note = case[TestCases.CASES_NOTE]
             for data in tmp_data_list:
                 # 1、增加备注
@@ -251,6 +253,7 @@ class Data:
         self.log.debug("获取CaseData运行测试个数{}，数据内容{}".format(len(data_list), data_list))
         return data_list
 
+    # 定制测试报告
     def ttt(self):
         a = [{"a": "1", "b": "2"}, {"a": "3", "b": "4"}]
         b = {"描述": "登录"}

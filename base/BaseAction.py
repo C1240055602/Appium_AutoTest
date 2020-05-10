@@ -96,14 +96,18 @@ class Action:
 
         loc.click()
 
+    # 结果断言
     def assert_toast_result(self, **kwargs):
         toast_result = self.is_toast_exist(**kwargs)
-        assert toast_result
+        # assert toast_result
+        assert toast_result == False
+        # 拍图操作
         # try:
         #     assert toast_result == False
         # except Exception as e:
         #     png = self.driver.get_screenshot_as_png()
-        #     allure.attach(png,"toast错误",allure.attachment_type.PNG)
+        #     # 采用附件的方式把错误图片放到allure包里
+        #     allure.attach(png, "toast_error", allure.attachment_type.PNG)
         #     raise e
 
 
@@ -116,6 +120,7 @@ def screenshot_allure(func):
             func(self, *args, **kwargs)
         except Exception as e:
             png = self.driver.get_screenshot_as_png()
+            # 获取当前时间的错误截图
             name = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             allure.attach(png, name, allure.attachment_type.PNG)
             raise e

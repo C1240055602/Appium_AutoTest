@@ -1,0 +1,231 @@
+{
+  "uid" : "4b62d641b0a2997",
+  "name" : "Case_001-登录失败",
+  "fullName" : "testcase.TestKeywords.TestKeyword#test_run[run_case0]",
+  "historyId" : "1b1458eb6c9578bbae1b78493d33e22c",
+  "time" : {
+    "start" : 1589098268339,
+    "stop" : 1589098276783,
+    "duration" : 8444
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <testcase.TestKeywords.TestKeyword object at 0x000001D0491C39D0>\nrun_case = {'CASE_ID': 'Case_001', 'TC_ID': 'TC_Login', '备注': '登录功能测试', '描述': '登录功能测试', ...}\n\n    @pytest.mark.parametrize(\"run_case\", run_list)\n    def test_run(self, run_case):\n        log.info(\"执行用例内容:{}\".format(run_case))\n>       Operate(self.driver).step(data, run_case)\n\ntestcase\\TestKeywords.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbase\\BaseAction.py:126: in get_err_screenshot\n    raise e\nbase\\BaseAction.py:120: in get_err_screenshot\n    func(self, *args, **kwargs)\ntestcase\\operate\\KeywordOperatePytest.py:153: in step\n    action_method(**param_value)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base.BaseAction.Action object at 0x000001D0492CEB20>\nkwargs = {'by': 'xpath', 'expect': '密码错误', 'value': './/*[starts-with(@text,\"帐户\")]'}\ntoast_result = True\n\n    def assert_toast_result(self, **kwargs):\n        toast_result = self.is_toast_exist(**kwargs)\n        # assert toast_result\n>       assert toast_result == False\nE       AssertionError\n\nbase\\BaseAction.py:103: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589098252932,
+      "stop" : 1589098265060,
+      "duration" : 12128
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <testcase.TestKeywords.TestKeyword object at 0x000001D0491C39D0>\nrun_case = {'CASE_ID': 'Case_001', 'TC_ID': 'TC_Login', '备注': '登录功能测试', '描述': '登录功能测试', ...}\n\n    @pytest.mark.parametrize(\"run_case\", run_list)\n    def test_run(self, run_case):\n        log.info(\"执行用例内容:{}\".format(run_case))\n>       Operate(self.driver).step(data, run_case)\n\ntestcase\\TestKeywords.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbase\\BaseAction.py:126: in get_err_screenshot\n    raise e\nbase\\BaseAction.py:120: in get_err_screenshot\n    func(self, *args, **kwargs)\ntestcase\\operate\\KeywordOperatePytest.py:153: in step\n    action_method(**param_value)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base.BaseAction.Action object at 0x000001D0492CEB20>\nkwargs = {'by': 'xpath', 'expect': '密码错误', 'value': './/*[starts-with(@text,\"帐户\")]'}\ntoast_result = True\n\n    def assert_toast_result(self, **kwargs):\n        toast_result = self.is_toast_exist(**kwargs)\n        # assert toast_result\n>       assert toast_result == False\nE       AssertionError\n\nbase\\BaseAction.py:103: AssertionError",
+    "steps" : [ {
+      "name" : "点击允许",
+      "time" : {
+        "start" : 1589098268355,
+        "stop" : 1589098269487,
+        "duration" : 1132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击我的",
+      "time" : {
+        "start" : 1589098269489,
+        "stop" : 1589098270056,
+        "duration" : 567
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "切换密码登录",
+      "time" : {
+        "start" : 1589098270057,
+        "stop" : 1589098271911,
+        "duration" : 1854
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "输入用户名",
+      "time" : {
+        "start" : 1589098271912,
+        "stop" : 1589098273571,
+        "duration" : 1659
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "输入密码",
+      "time" : {
+        "start" : 1589098273574,
+        "stop" : 1589098274635,
+        "duration" : 1061
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击登录",
+      "time" : {
+        "start" : 1589098274637,
+        "stop" : 1589098275189,
+        "duration" : 552
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "结果验证",
+      "time" : {
+        "start" : 1589098275190,
+        "stop" : 1589098275889,
+        "duration" : 699
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"C:\\Users\\cjj\\PycharmProjects\\Appium_AutoTest\\testcase\\operate\\KeywordOperatePytest.py\", line 153, in step\n    action_method(**param_value)\n  File \"C:\\Users\\cjj\\PycharmProjects\\Appium_AutoTest\\base\\BaseAction.py\", line 103, in assert_toast_result\n    assert toast_result == False\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "edf6e3d5aa266616",
+      "name" : "2020-05-10 16:11:16",
+      "source" : "edf6e3d5aa266616.png",
+      "type" : "image/png",
+      "size" : 193455
+    }, {
+      "uid" : "bc95e64a6a63e7a9",
+      "name" : "log",
+      "source" : "bc95e64a6a63e7a9.txt",
+      "type" : "text/plain",
+      "size" : 3567
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589098277249,
+      "stop" : 1589098278013,
+      "duration" : 764
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登录功能测试"
+  }, {
+    "name" : "story",
+    "value" : "登录功能测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "TestKeywords"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestKeyword"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-0LL74L3"
+  }, {
+    "name" : "thread",
+    "value" : "14768-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.TestKeywords"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "run_case",
+    "value" : "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "4b62d641b0a2997.json",
+  "parameterValues" : [ "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}" ]
+}

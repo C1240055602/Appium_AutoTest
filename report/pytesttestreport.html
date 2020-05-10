@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Test Report</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function find_all(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sort_column(elem) {
+    toggle_sort_states(elem);
+    var colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    var key;
+    if (elem.classList.contains('numeric')) {
+        key = key_num;
+    } else if (elem.classList.contains('result')) {
+        key = key_result;
+    } else {
+        key = key_alpha;
+    }
+    sort_table(elem, key(colIndex));
+}
+
+function show_all_extras() {
+    find_all('.col-result').forEach(show_extras);
+}
+
+function hide_all_extras() {
+    find_all('.col-result').forEach(hide_extras);
+}
+
+function show_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.remove("collapsed");
+    expandcollapse.classList.remove("expander");
+    expandcollapse.classList.add("collapser");
+}
+
+function hide_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.add("collapsed");
+    expandcollapse.classList.remove("collapser");
+    expandcollapse.classList.add("expander");
+}
+
+function show_filters() {
+    var filter_items = document.getElementsByClassName('filter');
+    for (var i = 0; i < filter_items.length; i++)
+        filter_items[i].hidden = false;
+}
+
+function add_collapse() {
+    // Add links for show/hide all
+    var resulttable = find('table#results-table');
+    var showhideall = document.createElement("p");
+    showhideall.innerHTML = '<a href="javascript:show_all_extras()">Show all details</a> / ' +
+                            '<a href="javascript:hide_all_extras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    find_all('.col-result').forEach(function(elem) {
+        var collapsed = get_query_parameter('collapsed') || 'Passed';
+        var extras = elem.parentNode.nextElementSibling;
+        var expandcollapse = document.createElement("span");
+        if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add("collapsed");
+            expandcollapse.classList.add("expander");
+        } else {
+            expandcollapse.classList.add("collapser");
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener("click", function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains("collapsed")) {
+                show_extras(event.currentTarget);
+            } else {
+                hide_extras(event.currentTarget);
+            }
+        });
+    })
+}
+
+function get_query_parameter(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () {
+    reset_sort_headers();
+
+    add_collapse();
+
+    show_filters();
+
+    toggle_sort_states(find('.initial-sort'));
+
+    find_all('.sortable').forEach(function(elem) {
+        elem.addEventListener("click",
+                              function(event) {
+                                  sort_column(elem);
+                              }, false)
+    });
+
+};
+
+function sort_table(clicked, key_func) {
+    var rows = find_all('.results-table-row');
+    var reversed = !clicked.classList.contains('asc');
+    var sorted_rows = sort(rows, key_func, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    var thead = document.getElementById("results-table-head");
+    document.getElementById('results-table').remove();
+    var parent = document.createElement("table");
+    parent.id = "results-table";
+    parent.appendChild(thead);
+    sorted_rows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName("BODY")[0].appendChild(parent);
+}
+
+function sort(items, key_func, reversed) {
+    var sort_array = items.map(function(item, i) {
+        return [key_func(item), i];
+    });
+    var multiplier = reversed ? -1 : 1;
+
+    sort_array.sort(function(a, b) {
+        var key_a = a[0];
+        var key_b = b[0];
+        return multiplier * (key_a >= key_b ? 1 : -1);
+    });
+
+    return sort_array.map(function(item) {
+        var index = item[1];
+        return items[index];
+    });
+}
+
+function key_alpha(col_index) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[col_index].firstChild.data.toLowerCase();
+    };
+}
+
+function key_num(col_index) {
+    return function(elem) {
+        return parseFloat(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function key_result(col_index) {
+    return function(elem) {
+        var strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+                       'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function reset_sort_headers() {
+    find_all('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    find_all('.sortable').forEach(function(elem) {
+        var icon = document.createElement("div");
+        icon.className = "sort-icon";
+        icon.textContent = "vvv";
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove("desc", "active");
+        elem.classList.add("asc", "inactive");
+    });
+}
+
+function toggle_sort_states(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        reset_sort_headers();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function is_all_rows_hidden(value) {
+  return value.hidden == false;
+}
+
+function filter_table(elem) {
+    var outcome_att = "data-test-result";
+    var outcome = elem.getAttribute(outcome_att);
+    class_outcome = outcome + " results-table-row";
+    var outcome_rows = document.getElementsByClassName(class_outcome);
+
+    for(var i = 0; i < outcome_rows.length; i++){
+        outcome_rows[i].hidden = !elem.checked;
+    }
+
+    var rows = find_all('.results-table-row').filter(is_all_rows_hidden);
+    var all_rows_hidden = rows.length == 0 ? true : false;
+    var not_found_message = document.getElementById("not-found-message");
+    not_found_message.hidden = !all_rows_hidden;
+}
+</script>
+    <h1>pytesttestreport.html</h1>
+    <p>Report generated on 09-May-2020 at 16:31:53 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v1.20.0</p>
+    <h2>Environment</h2>
+    <table id="environment">
+      <tr>
+        <td>JAVA_HOME</td>
+        <td>C:\Program Files\Java\jdk1.8.0_144</td></tr>
+      <tr>
+        <td>Packages</td>
+        <td>{&apos;pytest&apos;: &apos;4.5.0&apos;, &apos;py&apos;: &apos;1.8.0&apos;, &apos;pluggy&apos;: &apos;0.11.0&apos;}</td></tr>
+      <tr>
+        <td>Platform</td>
+        <td>Windows-10-10.0.18362-SP0</td></tr>
+      <tr>
+        <td>Plugins</td>
+        <td>{&apos;rerunfailures&apos;: &apos;7.0&apos;, &apos;ordering&apos;: &apos;0.6&apos;, &apos;metadata&apos;: &apos;1.8.0&apos;, &apos;html&apos;: &apos;1.20.0&apos;, &apos;allure-pytest&apos;: &apos;2.6.4&apos;}</td></tr>
+      <tr>
+        <td>Python</td>
+        <td>3.8.0</td></tr></table>
+    <h2>Summary</h2>
+    <p>2 tests ran in 134.54 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">1 rerun</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable numeric" col="duration">Duration</th>
+          <th>Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testcase/TestKeywords.py::TestKeyword::test_run[run_case1]</td>
+          <td class="col-duration">47.62</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;testcase.TestKeywords.TestKeyword object at 0x0000025B2CA18250&gt;<br/>run_case = {&#x27;CASE_ID&#x27;: &#x27;Case_008&#x27;, &#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;备注&#x27;: &#x27;搜索功能测试&#x27;, &#x27;描述&#x27;: &#x27;搜索功能&#x27;, ...}<br/><br/>    @pytest.mark.parametrize(&quot;run_case&quot;, run_list)<br/>    def test_run(self, run_case):<br/>        log.info(&quot;执行用例内容:{}&quot;.format(run_case))<br/>&gt;       Operate(self.driver).step(data, run_case)<br/><br/>testcase\TestKeywords.py:20: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>testcase\operate\KeywordOperatePytest.py:96: in step<br/>    action_method(**param_value)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;base.BaseAction.Action object at 0x0000025B2C9B7640&gt;<br/>kwargs = {&#x27;by&#x27;: &#x27;id&#x27;, &#x27;expect&#x27;: &#x27;&#x27;, &#x27;value&#x27;: &#x27;com.boxuegu:id/negative_button&#x27;}<br/>by = &#x27;id&#x27;, value = &#x27;com.boxuegu:id/negative_button&#x27;, loc = None<br/><br/>    def click_btn(self, **kwargs):<br/>        # 根据by类型，进行by_id,by_xpath方法调用<br/>        by, value = kwargs[&quot;by&quot;], kwargs[&quot;value&quot;]<br/>        if by == &quot;id&quot;:<br/>            loc = self.by_id(value)<br/>        elif by == &quot;xpath&quot;:<br/>            loc = self.by_xpath(value)<br/>    <br/>&gt;       loc.click()<br/><span class="error">E       AttributeError: &#x27;NoneType&#x27; object has no attribute &#x27;click&#x27;</span><br/><br/>base\BaseAction.py:97: AttributeError<br/>------------------------------ Captured log call -------------------------------<br/>INFO     TestKeywords:TestKeywords.py:19 执行用例内容:{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;CASE_ID&#x27;: &#x27;Case_008&#x27;, &#x27;是否运行&#x27;: &#x27;y&#x27;, &#x27;用例名称&#x27;: &#x27;查询123&#x27;, &#x27;测试数据&#x27;: &#x27;value=123&#x27;, &#x27;期望结果&#x27;: &#x27;&#x27;, &#x27;备注&#x27;: &#x27;搜索功能测试&#x27;, &#x27;描述&#x27;: &#x27;搜索功能&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;步骤ID&#x27;: &#x27;TSFind001&#x27;, &#x27;步骤名称&#x27;: &#x27;点击允许&#x27;, &#x27;操作&#x27;: &#x27;click&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;数据&#x27;: &#x27;&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;定位类型&#x27;: &#x27;id&#x27;, &#x27;元素信息&#x27;: &#x27;com.boxuegu:id/negative_button&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是click_btn
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;步骤ID&#x27;: &#x27;TSFind002&#x27;, &#x27;步骤名称&#x27;: &#x27;点击允许&#x27;, &#x27;操作&#x27;: &#x27;click&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;数据&#x27;: &#x27;&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;定位类型&#x27;: &#x27;id&#x27;, &#x27;元素信息&#x27;: &#x27;com.boxuegu:id/negative_button&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是click_btn
+ERROR    Base_Page:BaseAction.py:71 没有找到该元素：Message:------------------------------ Captured log call -------------------------------<br/>INFO     TestKeywords:TestKeywords.py:19 执行用例内容:{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;CASE_ID&#x27;: &#x27;Case_008&#x27;, &#x27;是否运行&#x27;: &#x27;y&#x27;, &#x27;用例名称&#x27;: &#x27;查询123&#x27;, &#x27;测试数据&#x27;: &#x27;value=123&#x27;, &#x27;期望结果&#x27;: &#x27;&#x27;, &#x27;备注&#x27;: &#x27;搜索功能测试&#x27;, &#x27;描述&#x27;: &#x27;搜索功能&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;步骤ID&#x27;: &#x27;TSFind001&#x27;, &#x27;步骤名称&#x27;: &#x27;点击允许&#x27;, &#x27;操作&#x27;: &#x27;click&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;数据&#x27;: &#x27;&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;定位类型&#x27;: &#x27;id&#x27;, &#x27;元素信息&#x27;: &#x27;com.boxuegu:id/negative_button&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是click_btn
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;步骤ID&#x27;: &#x27;TSFind002&#x27;, &#x27;步骤名称&#x27;: &#x27;点击允许&#x27;, &#x27;操作&#x27;: &#x27;click&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;数据&#x27;: &#x27;&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;定位类型&#x27;: &#x27;id&#x27;, &#x27;元素信息&#x27;: &#x27;com.boxuegu:id/negative_button&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是click_btn
+ERROR    Base_Page:BaseAction.py:71 没有找到该元素：Message:</div></td></tr></tbody>
+      <tbody class="rerun results-table-row">
+        <tr>
+          <td class="col-result">Rerun</td>
+          <td class="col-name">testcase/TestKeywords.py::TestKeyword::test_run[run_case1]</td>
+          <td class="col-duration">47.78</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;testcase.TestKeywords.TestKeyword object at 0x0000025B2C9A2B80&gt;<br/>run_case = {&#x27;CASE_ID&#x27;: &#x27;Case_008&#x27;, &#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;备注&#x27;: &#x27;搜索功能测试&#x27;, &#x27;描述&#x27;: &#x27;搜索功能&#x27;, ...}<br/><br/>    @pytest.mark.parametrize(&quot;run_case&quot;, run_list)<br/>    def test_run(self, run_case):<br/>        log.info(&quot;执行用例内容:{}&quot;.format(run_case))<br/>&gt;       Operate(self.driver).step(data, run_case)<br/><br/>testcase\TestKeywords.py:20: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>testcase\operate\KeywordOperatePytest.py:96: in step<br/>    action_method(**param_value)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;base.BaseAction.Action object at 0x0000025B2C9B7370&gt;<br/>kwargs = {&#x27;by&#x27;: &#x27;id&#x27;, &#x27;expect&#x27;: &#x27;&#x27;, &#x27;value&#x27;: &#x27;com.boxuegu:id/negative_button&#x27;}<br/>by = &#x27;id&#x27;, value = &#x27;com.boxuegu:id/negative_button&#x27;, loc = None<br/><br/>    def click_btn(self, **kwargs):<br/>        # 根据by类型，进行by_id,by_xpath方法调用<br/>        by, value = kwargs[&quot;by&quot;], kwargs[&quot;value&quot;]<br/>        if by == &quot;id&quot;:<br/>            loc = self.by_id(value)<br/>        elif by == &quot;xpath&quot;:<br/>            loc = self.by_xpath(value)<br/>    <br/>&gt;       loc.click()<br/><span class="error">E       AttributeError: &#x27;NoneType&#x27; object has no attribute &#x27;click&#x27;</span><br/><br/>base\BaseAction.py:97: AttributeError<br/>------------------------------ Captured log call -------------------------------<br/>INFO     TestKeywords:TestKeywords.py:19 执行用例内容:{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;CASE_ID&#x27;: &#x27;Case_008&#x27;, &#x27;是否运行&#x27;: &#x27;y&#x27;, &#x27;用例名称&#x27;: &#x27;查询123&#x27;, &#x27;测试数据&#x27;: &#x27;value=123&#x27;, &#x27;期望结果&#x27;: &#x27;&#x27;, &#x27;备注&#x27;: &#x27;搜索功能测试&#x27;, &#x27;描述&#x27;: &#x27;搜索功能&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;步骤ID&#x27;: &#x27;TSFind001&#x27;, &#x27;步骤名称&#x27;: &#x27;点击允许&#x27;, &#x27;操作&#x27;: &#x27;click&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;数据&#x27;: &#x27;&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;定位类型&#x27;: &#x27;id&#x27;, &#x27;元素信息&#x27;: &#x27;com.boxuegu:id/negative_button&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是click_btn
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;步骤ID&#x27;: &#x27;TSFind002&#x27;, &#x27;步骤名称&#x27;: &#x27;点击允许&#x27;, &#x27;操作&#x27;: &#x27;click&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;数据&#x27;: &#x27;&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Find&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;定位类型&#x27;: &#x27;id&#x27;, &#x27;元素信息&#x27;: &#x27;com.boxuegu:id/negative_button&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是click_btn
+ERROR    Base_Page:BaseAction.py:71 没有找到该元素：Message:</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcase/TestKeywords.py::TestKeyword::test_run[run_case0]</td>
+          <td class="col-duration">7.55</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">------------------------------ Captured log call -------------------------------<br/>INFO     TestKeywords:TestKeywords.py:19 执行用例内容:{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;CASE_ID&#x27;: &#x27;Case_001&#x27;, &#x27;是否运行&#x27;: &#x27;y&#x27;, &#x27;用例名称&#x27;: &#x27;登录失败&#x27;, &#x27;测试数据&#x27;: &#x27;username=13718418220,password=123456&#x27;, &#x27;期望结果&#x27;: &#x27;密码错误&#x27;, &#x27;备注&#x27;: &#x27;登录功能测试&#x27;, &#x27;描述&#x27;: &#x27;登录功能测试&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;步骤ID&#x27;: &#x27;TS001&#x27;, &#x27;步骤名称&#x27;: &#x27;点击允许&#x27;, &#x27;操作&#x27;: &#x27;click&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;数据&#x27;: &#x27;&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;元素名称&#x27;: &#x27;El_allow_button&#x27;, &#x27;定位类型&#x27;: &#x27;id&#x27;, &#x27;元素信息&#x27;: &#x27;com.boxuegu:id/negative_button&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是click_btn
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;步骤ID&#x27;: &#x27;TS002&#x27;, &#x27;步骤名称&#x27;: &#x27;点击我的&#x27;, &#x27;操作&#x27;: &#x27;click&#x27;, &#x27;元素名称&#x27;: &#x27;EL_tab_me&#x27;, &#x27;数据&#x27;: &#x27;&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;元素名称&#x27;: &#x27;EL_tab_me&#x27;, &#x27;定位类型&#x27;: &#x27;xpath&#x27;, &#x27;元素信息&#x27;: &#x27;//*[starts-with(@text,&quot;我的&quot;)]&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是click_btn
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;步骤ID&#x27;: &#x27;TS003&#x27;, &#x27;步骤名称&#x27;: &#x27;切换密码登录&#x27;, &#x27;操作&#x27;: &#x27;click&#x27;, &#x27;元素名称&#x27;: &#x27;EL_passwd_btn&#x27;, &#x27;数据&#x27;: &#x27;&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;元素名称&#x27;: &#x27;EL_passwd_btn&#x27;, &#x27;定位类型&#x27;: &#x27;id&#x27;, &#x27;元素信息&#x27;: &#x27;com.boxuegu:id/passwordLoginTv&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是click_btn
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;步骤ID&#x27;: &#x27;TS004&#x27;, &#x27;步骤名称&#x27;: &#x27;输入用户名&#x27;, &#x27;操作&#x27;: &#x27;text&#x27;, &#x27;元素名称&#x27;: &#x27;El_username&#x27;, &#x27;数据&#x27;: &#x27;username&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;元素名称&#x27;: &#x27;El_username&#x27;, &#x27;定位类型&#x27;: &#x27;id&#x27;, &#x27;元素信息&#x27;: &#x27;com.boxuegu:id/edit_usr&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是send_keys
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;步骤ID&#x27;: &#x27;TS005&#x27;, &#x27;步骤名称&#x27;: &#x27;输入密码&#x27;, &#x27;操作&#x27;: &#x27;text&#x27;, &#x27;元素名称&#x27;: &#x27;El_password&#x27;, &#x27;数据&#x27;: &#x27;password&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;元素名称&#x27;: &#x27;El_password&#x27;, &#x27;定位类型&#x27;: &#x27;id&#x27;, &#x27;元素信息&#x27;: &#x27;com.boxuegu:id/edit_pwd&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是send_keys
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;步骤ID&#x27;: &#x27;TS006&#x27;, &#x27;步骤名称&#x27;: &#x27;点击登录&#x27;, &#x27;操作&#x27;: &#x27;click&#x27;, &#x27;元素名称&#x27;: &#x27;login_btn&#x27;, &#x27;数据&#x27;: &#x27;&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;元素名称&#x27;: &#x27;login_btn&#x27;, &#x27;定位类型&#x27;: &#x27;id&#x27;, &#x27;元素信息&#x27;: &#x27;com.boxuegu:id/btn_login&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是click_btn
+DEBUG    operate:KeywordOperatePytest.py:61 执行步骤{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;步骤ID&#x27;: &#x27;TS007&#x27;, &#x27;步骤名称&#x27;: &#x27;结果验证&#x27;, &#x27;操作&#x27;: &#x27;verify_toast&#x27;, &#x27;元素名称&#x27;: &#x27;El_login_toast&#x27;, &#x27;数据&#x27;: &#x27;&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:65 元素信息{&#x27;TC_ID&#x27;: &#x27;TC_Login&#x27;, &#x27;元素名称&#x27;: &#x27;El_login_toast&#x27;, &#x27;定位类型&#x27;: &#x27;xpath&#x27;, &#x27;元素信息&#x27;: &#x27;.//*[starts-with(@text,&quot;帐户&quot;)]&#x27;}
+DEBUG    operate:KeywordOperatePytest.py:76 该关键字是assert_toast_result
+INFO     Base_Page:BaseAction.py:83 获取toast内容为：账号或密码错误</div></td></tr></tbody></table></body></html>

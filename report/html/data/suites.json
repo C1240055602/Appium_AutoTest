@@ -1,5 +1,29 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "testcase",
+    "children" : [ {
+      "name" : "TestKeywords",
+      "children" : [ {
+        "name" : "TestKeyword",
+        "children" : [ {
+          "name" : "Case_001-登录失败",
+          "uid" : "4b62d641b0a2997",
+          "parentUid" : "e836c6066021918f73a7e193fbfabab1",
+          "status" : "failed",
+          "time" : {
+            "start" : 1589098268339,
+            "stop" : 1589098276783,
+            "duration" : 8444
+          },
+          "flaky" : false,
+          "parameters" : [ "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}" ]
+        } ],
+        "uid" : "e836c6066021918f73a7e193fbfabab1"
+      } ],
+      "uid" : "5b004c01582c75c1ea08511ae3be4f73"
+    } ],
+    "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
+  } ]
 }

@@ -1,1 +1,11 @@
-[ ]
+[ {
+  "uid" : "4b62d641b0a2997",
+  "name" : "Case_001-登录失败",
+  "time" : {
+    "start" : 1589098268339,
+    "stop" : 1589098276783,
+    "duration" : 8444
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]
