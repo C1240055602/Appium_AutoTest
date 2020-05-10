@@ -81,3 +81,97 @@
 2020-05-10 16:59:12,166 - start_appium - INFO - [35m[Appium][39m   }
 2020-05-10 16:59:12,184 - start_appium - INFO - [35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4723
 2020-05-10 16:59:12,184 - start_appium - INFO - Æô¶¯³É¹¦£ºÆô¶¯²ÎÊıÊÇ£ºhostÎª127.0.0.1,portÎª4723,bpportÎª4724,udidÎªNone
+2020-05-10 17:11:05,307 - start_appium - INFO - port 4723 is not used
+2020-05-10 17:11:05,307 - start_appium - INFO - ¸Ã¶Ë¿ÚÎ´ÔËĞĞ
+2020-05-10 17:17:40,776 - start_appium - INFO - »ñÈ¡µÄdevicesĞÅÏ¢udid:['192.168.49.101:5555']
+2020-05-10 20:35:35,970 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡TestCases±í²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'ĞòºÅ': 1.0, 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'TC_ID': 'TC_Login', 'ÊÇ·ñÔËĞĞ': 'y', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-10 20:35:35,974 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡CaseDataÔËĞĞ²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13718418220,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-10 20:35:35,977 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡TestCases±í²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'ĞòºÅ': 1.0, 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'TC_ID': 'TC_Login', 'ÊÇ·ñÔËĞĞ': 'y', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-10 20:35:35,981 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡CaseDataÔËĞĞ²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13718418220,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-10 20:35:36,026 - start_appium - INFO - »ñÈ¡µÄdevicesĞÅÏ¢udid:['192.168.49.101:5555']
+2020-05-10 20:35:38,028 - start_appium - INFO - port 4723 is not used
+2020-05-10 20:35:38,155 - start_appium - INFO - 
+2020-05-10 20:35:43,678 - start_appium - INFO - (node:18256) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, rename 'C:\Users\cjj\AppData\Roaming\appium-desktop\Settings-tmp' -> 'C:\Users\cjj\AppData\Roaming\appium-desktop\Settings'
+2020-05-10 20:37:59,106 - start_appium - ERROR - Æô¶¯Ê§°Ü£¬³ö´íĞÅÏ¢Îª
+2020-05-10 20:38:00,670 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡TestCases±í²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'ĞòºÅ': 1.0, 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'TC_ID': 'TC_Login', 'ÊÇ·ñÔËĞĞ': 'y', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-10 20:38:00,674 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡CaseDataÔËĞĞ²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13718418220,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-10 20:38:00,678 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡TestCases±í²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'ĞòºÅ': 1.0, 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'TC_ID': 'TC_Login', 'ÊÇ·ñÔËĞĞ': 'y', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-10 20:38:00,682 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡CaseDataÔËĞĞ²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13718418220,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-10 20:38:00,718 - start_appium - INFO - »ñÈ¡µÄdevicesĞÅÏ¢udid:['192.168.49.101:5555']
+2020-05-10 20:38:02,720 - start_appium - INFO - port 4723 is not used
+2020-05-10 20:38:02,770 - start_appium - INFO - 
+2020-05-10 20:38:10,692 - start_appium - INFO - [35m[Appium][39m Welcome to Appium v1.17.0
+2020-05-10 20:38:10,692 - start_appium - INFO - [35m[Appium][39m Non-default server args:
+2020-05-10 20:38:10,693 - start_appium - INFO - [35m[Appium][39m   allowInsecure: {
+2020-05-10 20:38:10,693 - start_appium - INFO - [35m[Appium][39m   }
+2020-05-10 20:38:10,693 - start_appium - INFO - [35m[Appium][39m   denyInsecure: {
+2020-05-10 20:38:10,693 - start_appium - INFO - [35m[Appium][39m   }
+2020-05-10 20:38:10,720 - start_appium - INFO - [35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4723
+2020-05-10 20:38:10,720 - start_appium - INFO - Æô¶¯³É¹¦£ºÆô¶¯²ÎÊıÊÇ£ºhostÎª127.0.0.1,portÎª4723,bpportÎª4724,udidÎª192.168.49.101:5555
+2020-05-10 20:38:15,722 - start_appium - INFO - port 4723 is used!
+2020-05-10 20:38:27,814 - TestKeywords - INFO - Ö´ĞĞÓÃÀıÄÚÈİ:{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13718418220,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}
+2020-05-10 20:38:27,824 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS001', '²½ÖèÃû³Æ': 'µã»÷ÔÊĞí', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'El_allow_button', 'Êı¾İ': ''}
+2020-05-10 20:38:27,829 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_allow_button', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/negative_button'}
+2020-05-10 20:38:27,830 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-10 20:38:28,972 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS002', '²½ÖèÃû³Æ': 'µã»÷ÎÒµÄ', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'EL_tab_me', 'Êı¾İ': ''}
+2020-05-10 20:38:28,972 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'EL_tab_me', '¶¨Î»ÀàĞÍ': 'xpath', 'ÔªËØĞÅÏ¢': '//*[starts-with(@text,"ÎÒµÄ")]'}
+2020-05-10 20:38:28,974 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-10 20:38:30,745 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS003', '²½ÖèÃû³Æ': 'ÇĞ»»ÃÜÂëµÇÂ¼', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'EL_passwd_btn', 'Êı¾İ': ''}
+2020-05-10 20:38:30,745 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'EL_passwd_btn', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/passwordLoginTv'}
+2020-05-10 20:38:30,746 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-10 20:38:32,213 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS004', '²½ÖèÃû³Æ': 'ÊäÈëÓÃ»§Ãû', '²Ù×÷': 'text', 'ÔªËØÃû³Æ': 'El_username', 'Êı¾İ': 'username'}
+2020-05-10 20:38:32,213 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_username', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/edit_usr'}
+2020-05-10 20:38:32,214 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇsend_keys
+2020-05-10 20:38:33,876 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS005', '²½ÖèÃû³Æ': 'ÊäÈëÃÜÂë', '²Ù×÷': 'text', 'ÔªËØÃû³Æ': 'El_password', 'Êı¾İ': 'password'}
+2020-05-10 20:38:33,876 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_password', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/edit_pwd'}
+2020-05-10 20:38:33,877 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇsend_keys
+2020-05-10 20:38:34,931 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS006', '²½ÖèÃû³Æ': 'µã»÷µÇÂ¼', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'login_btn', 'Êı¾İ': ''}
+2020-05-10 20:38:34,932 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'login_btn', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/btn_login'}
+2020-05-10 20:38:34,933 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-10 20:38:35,466 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS007', '²½ÖèÃû³Æ': '½á¹ûÑéÖ¤', '²Ù×÷': 'verify_toast', 'ÔªËØÃû³Æ': 'El_login_toast', 'Êı¾İ': ''}
+2020-05-10 20:38:35,466 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_login_toast', '¶¨Î»ÀàĞÍ': 'xpath', 'ÔªËØĞÅÏ¢': './/*[starts-with(@text,"ÕÊ»§")]'}
+2020-05-10 20:38:35,467 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇassert_toast_result
+2020-05-10 20:38:36,256 - Base_Page - INFO - »ñÈ¡toastÄÚÈİÎª£ºÕËºÅ»òÃÜÂë´íÎó
+2020-05-10 20:38:39,757 - allure_generate - INFO - ±¨¸æµØÖ·C:\Users\cjj\PycharmProjects\Appium_AutoTest\report\result
+2020-05-10 20:38:43,138 - allure_generate - INFO - ±¨¸æµØÖ·C:\Users\cjj\PycharmProjects\Appium_AutoTest\report\html
+2020-05-10 20:39:10,119 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡TestCases±í²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'ĞòºÅ': 1.0, 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'TC_ID': 'TC_Login', 'ÊÇ·ñÔËĞĞ': 'y', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-10 20:39:10,123 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡CaseDataÔËĞĞ²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13718418220,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-10 20:39:10,126 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡TestCases±í²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'ĞòºÅ': 1.0, 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'TC_ID': 'TC_Login', 'ÊÇ·ñÔËĞĞ': 'y', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-10 20:39:10,130 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡CaseDataÔËĞĞ²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13718418220,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-10 20:39:10,164 - start_appium - INFO - »ñÈ¡µÄdevicesĞÅÏ¢udid:['192.168.49.101:5555']
+2020-05-10 20:39:12,165 - start_appium - INFO - port 4723 is not used
+2020-05-10 20:39:12,216 - start_appium - INFO - 
+2020-05-10 20:39:20,178 - start_appium - INFO - [35m[Appium][39m Welcome to Appium v1.17.0
+2020-05-10 20:39:20,179 - start_appium - INFO - [35m[Appium][39m Non-default server args:
+2020-05-10 20:39:20,179 - start_appium - INFO - [35m[Appium][39m   allowInsecure: {
+2020-05-10 20:39:20,179 - start_appium - INFO - [35m[Appium][39m   }
+2020-05-10 20:39:20,179 - start_appium - INFO - [35m[Appium][39m   denyInsecure: {
+2020-05-10 20:39:20,179 - start_appium - INFO - [35m[Appium][39m   }
+2020-05-10 20:39:20,201 - start_appium - INFO - [35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4723
+2020-05-10 20:39:20,201 - start_appium - INFO - Æô¶¯³É¹¦£ºÆô¶¯²ÎÊıÊÇ£ºhostÎª127.0.0.1,portÎª4723,bpportÎª4724,udidÎª192.168.49.101:5555
+2020-05-10 20:39:25,202 - start_appium - INFO - port 4723 is used!
+2020-05-10 20:39:36,664 - TestKeywords - INFO - Ö´ĞĞÓÃÀıÄÚÈİ:{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13718418220,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}
+2020-05-10 20:39:36,668 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS001', '²½ÖèÃû³Æ': 'µã»÷ÔÊĞí', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'El_allow_button', 'Êı¾İ': ''}
+2020-05-10 20:39:36,673 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_allow_button', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/negative_button'}
+2020-05-10 20:39:36,675 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-10 20:39:37,878 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS002', '²½ÖèÃû³Æ': 'µã»÷ÎÒµÄ', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'EL_tab_me', 'Êı¾İ': ''}
+2020-05-10 20:39:37,878 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'EL_tab_me', '¶¨Î»ÀàĞÍ': 'xpath', 'ÔªËØĞÅÏ¢': '//*[starts-with(@text,"ÎÒµÄ")]'}
+2020-05-10 20:39:37,879 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-10 20:39:39,181 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS003', '²½ÖèÃû³Æ': 'ÇĞ»»ÃÜÂëµÇÂ¼', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'EL_passwd_btn', 'Êı¾İ': ''}
+2020-05-10 20:39:39,181 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'EL_passwd_btn', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/passwordLoginTv'}
+2020-05-10 20:39:39,182 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-10 20:39:40,982 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS004', '²½ÖèÃû³Æ': 'ÊäÈëÓÃ»§Ãû', '²Ù×÷': 'text', 'ÔªËØÃû³Æ': 'El_username', 'Êı¾İ': 'username'}
+2020-05-10 20:39:40,982 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_username', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/edit_usr'}
+2020-05-10 20:39:40,983 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇsend_keys
+2020-05-10 20:39:42,645 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS005', '²½ÖèÃû³Æ': 'ÊäÈëÃÜÂë', '²Ù×÷': 'text', 'ÔªËØÃû³Æ': 'El_password', 'Êı¾İ': 'password'}
+2020-05-10 20:39:42,645 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_password', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/edit_pwd'}
+2020-05-10 20:39:42,646 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇsend_keys
+2020-05-10 20:39:43,727 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS006', '²½ÖèÃû³Æ': 'µã»÷µÇÂ¼', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'login_btn', 'Êı¾İ': ''}
+2020-05-10 20:39:43,727 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'login_btn', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/btn_login'}
+2020-05-10 20:39:43,729 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-10 20:39:44,300 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS007', '²½ÖèÃû³Æ': '½á¹ûÑéÖ¤', '²Ù×÷': 'verify_toast', 'ÔªËØÃû³Æ': 'El_login_toast', 'Êı¾İ': ''}
+2020-05-10 20:39:44,300 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_login_toast', '¶¨Î»ÀàĞÍ': 'xpath', 'ÔªËØĞÅÏ¢': './/*[starts-with(@text,"ÕÊ»§")]'}
+2020-05-10 20:39:44,301 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇassert_toast_result
+2020-05-10 20:39:45,040 - Base_Page - INFO - »ñÈ¡toastÄÚÈİÎª£ºÕËºÅ»òÃÜÂë´íÎó
+2020-05-10 20:39:48,817 - allure_generate - INFO - ±¨¸æµØÖ·C:\Users\cjj\PycharmProjects\Appium_AutoTest\report\result
+2020-05-10 20:39:51,849 - allure_generate - INFO - ±¨¸æµØÖ·C:\Users\cjj\PycharmProjects\Appium_AutoTest\report\html

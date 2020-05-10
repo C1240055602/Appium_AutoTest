@@ -10,8 +10,8 @@ data = reader.data()
 
 # 2、结果，字典转换
 
-def appium_desired_caps():
-    # def appium_desired_caps(host, port, systemPort = "8200"):
+def appium_desired_caps(host, port):
+    # def appium_desired_caps():
     # 2、desired创建字典
     desired_caps = dict()
     # 3、platformName
@@ -40,8 +40,8 @@ def appium_desired_caps():
     # 解决并发测试
     # desired_caps["systemPort"] = systemPort
     # 8、http，连接appium服务器
-    # driver = webdriver.Remote('http://%s:%s/wd/hub' % (host, port), desired_caps)
-    driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
+    driver = webdriver.Remote('http://%s:%s/wd/hub' % (host, port), desired_caps)
+    # driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
     driver.implicitly_wait(20)
 
