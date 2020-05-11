@@ -16,7 +16,7 @@ if __name__ == '__main__':
               "port": "4723",
               "bpport": "4724",
               "udid": "192.168.49.101:5555",
-              "systemPort": 8200}
+              "systemPort": 8208}
     pytest.main([f"--cmdopt={cmdopt}", "--alluredir", report_path])
 
     # pytest.main()
