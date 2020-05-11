@@ -30,13 +30,13 @@ def start_appium_desired(cmdopt):
     # system_port = opt["systemPort"]
     # print(opt)
     driver = None
-    if udid in get_devices():
-        appium_start(host, port, bpport, udid)
-        time.sleep(5)
-        if not check_port():
-            driver = appium_desired_caps(host, port)
-    # if not check_port(host, port):
-    #     driver = appium_desired_caps(host, port, system_port)
-    return driver
-    # yield driver
-    # driver.quit()
+    # if udid in get_devices():
+    #     appium_start(host, port, bpport, udid)
+    #     time.sleep(5)
+    #     if not check_port():
+    #         driver = appium_desired_caps(host, port)
+    # return driver
+    if not check_port(host, port):
+        driver = appium_desired_caps(host, port, system_port)
+    yield driver
+    driver.quit()

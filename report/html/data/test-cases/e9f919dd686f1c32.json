@@ -1,0 +1,90 @@
+{
+  "uid" : "e9f919dd686f1c32",
+  "name" : "test_run[run_case1]",
+  "fullName" : "testcase.TestKeywords.TestKeyword#test_run[run_case1]",
+  "historyId" : "8d5dfeb10adbb2d95195a9139c95dbbf",
+  "time" : {
+    "start" : 1589161162829,
+    "stop" : 1589161162829,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'run' is not defined",
+  "statusTrace" : "tp = <class 'NameError'>, value = None, tb = None\n\n    def reraise(tp, value, tb=None):\n        try:\n            if value is None:\n                value = tp()\n            if value.__traceback__ is not tb:\n>               raise value.with_traceback(tb)\n\n..\\..\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\six.py:692: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ncmdopt = 'run'\n\n    @pytest.fixture(scope=\"session\")\n    def start_appium_desired(cmdopt):\n>       opt = eval(cmdopt)\nE       NameError: name 'run' is not defined\n\ntestcase\\conftest.py:21: NameError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1589161162821,
+      "stop" : 1589161162821,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "start_appium_desired",
+    "time" : {
+      "start" : 1589161162821,
+      "stop" : 1589161162821,
+      "duration" : 0
+    },
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'run' is not defined\n",
+    "statusTrace" : "  File \"C:\\Users\\cjj\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"C:\\Users\\cjj\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\_pytest\\fixtures.py\", line 937, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"C:\\Users\\cjj\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\_pytest\\fixtures.py\", line 794, in call_fixture_func\n    res = fixturefunc(**kwargs)\n  File \"C:\\Users\\cjj\\PycharmProjects\\Appium_AutoTest\\testcase\\conftest.py\", line 21, in start_appium_desired\n    opt = eval(cmdopt)\n  File \"<string>\", line 1, in <module>\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "TestKeywords"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestKeyword"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-0LL74L3"
+  }, {
+    "name" : "thread",
+    "value" : "14172-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.TestKeywords"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "run_case",
+    "value" : "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', '是否运行': 'y', '用例名称': '登录成功', '测试数据': 'username=13718418220,password=112233', '期望结果': '成功', '备注': '登录功能测试', '描述': '登录功能测试'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e9f919dd686f1c32.json",
+  "parameterValues" : [ "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', '是否运行': 'y', '用例名称': '登录成功', '测试数据': 'username=13718418220,password=112233', '期望结果': '成功', '备注': '登录功能测试', '描述': '登录功能测试'}" ]
+}

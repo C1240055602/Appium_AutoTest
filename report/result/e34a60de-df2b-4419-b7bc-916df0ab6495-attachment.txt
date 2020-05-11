@@ -1,0 +1,3 @@
+INFO     start_appium:StartAppium.py:83 获取的devices信息udid:['192.168.49.101:5555']
+INFO     start_appium:StartAppium.py:19 port 4723 is used!
+INFO     start_appium:StartAppium.py:23 port 4723 is not used

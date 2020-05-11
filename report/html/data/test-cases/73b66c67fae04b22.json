@@ -1,0 +1,245 @@
+{
+  "uid" : "73b66c67fae04b22",
+  "name" : "Case_001-登录失败",
+  "fullName" : "testcase.TestKeywords.TestKeyword#test_run[run_case0]",
+  "historyId" : "1b1458eb6c9578bbae1b78493d33e22c",
+  "time" : {
+    "start" : 1589161382720,
+    "stop" : 1589161413042,
+    "duration" : 30322
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "start_appium_desired",
+    "time" : {
+      "start" : 1589161358728,
+      "stop" : 1589161382718,
+      "duration" : 23990
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589161382718,
+      "stop" : 1589161382718,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1589161358728,
+      "stop" : 1589161358728,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "点击暂不需要",
+      "time" : {
+        "start" : 1589161385482,
+        "stop" : 1589161386638,
+        "duration" : 1156
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "点击我的",
+      "time" : {
+        "start" : 1589161386640,
+        "stop" : 1589161387353,
+        "duration" : 713
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "切换密码登录",
+      "time" : {
+        "start" : 1589161387354,
+        "stop" : 1589161388836,
+        "duration" : 1482
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "输入用户名",
+      "time" : {
+        "start" : 1589161388837,
+        "stop" : 1589161390522,
+        "duration" : 1685
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "输入密码",
+      "time" : {
+        "start" : 1589161390524,
+        "stop" : 1589161391598,
+        "duration" : 1074
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "点击登录",
+      "time" : {
+        "start" : 1589161391600,
+        "stop" : 1589161392151,
+        "duration" : 551
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "结果验证",
+      "time" : {
+        "start" : 1589161392153,
+        "stop" : 1589161413042,
+        "duration" : 20889
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "383fbb973a2b6fb9",
+      "name" : "log",
+      "source" : "383fbb973a2b6fb9.txt",
+      "type" : "text/plain",
+      "size" : 4537
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 7
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589161429568,
+      "stop" : 1589161429573,
+      "duration" : 5
+    },
+    "status" : "broken",
+    "statusMessage" : "AttributeError: type object 'TestKeyword' has no attribute 'driver'\n",
+    "statusTrace" : "  File \"C:\\Users\\cjj\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\allure_commons\\_allure.py\", line 169, in __call__\n    return self._fixture_function(*args, **kwargs)\n  File \"C:\\Users\\cjj\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\_pytest\\fixtures.py\", line 802, in _teardown_yield_fixture\n    next(it)\n  File \"C:\\Users\\cjj\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\_pytest\\python.py\", line 765, in xunit_setup_class_fixture\n    _call_with_optional_argument(func, self.obj)\n  File \"C:\\Users\\cjj\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\_pytest\\python.py\", line 702, in _call_with_optional_argument\n    func(arg)\n  File \"C:\\Users\\cjj\\PycharmProjects\\Appium_AutoTest\\testcase\\TestKeywords.py\", line 50, in teardown_class\n    self.driver.quit()\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登录功能测试"
+  }, {
+    "name" : "story",
+    "value" : "登录功能测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "TestKeywords"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestKeyword"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-0LL74L3"
+  }, {
+    "name" : "thread",
+    "value" : "11040-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.TestKeywords"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "run_case",
+    "value" : "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13766667777,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "73b66c67fae04b22.json",
+  "parameterValues" : [ "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13766667777,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}" ]
+}

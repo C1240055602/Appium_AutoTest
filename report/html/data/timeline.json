@@ -4,21 +4,33 @@
   "children" : [ {
     "name" : "DESKTOP-0LL74L3",
     "children" : [ {
-      "name" : "17488-MainThread",
+      "name" : "11040-MainThread",
       "children" : [ {
-        "name" : "Case_001-登录失败",
-        "uid" : "369a60a6cb894789",
-        "parentUid" : "f407e9014ace9324b3c79076bacb2035",
-        "status" : "failed",
+        "name" : "test_run[run_case1]",
+        "uid" : "2b90617a989194a0",
+        "parentUid" : "d1198808313aaf048428147c1f1c8169",
+        "status" : "broken",
         "time" : {
-          "start" : 1589114374144,
-          "stop" : 1589114386310,
-          "duration" : 12166
+          "start" : 1589161429660,
+          "stop" : 1589161429660,
+          "duration" : 0
         },
         "flaky" : true,
-        "parameters" : [ "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}" ]
+        "parameters" : [ "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', '是否运行': 'y', '用例名称': '登录成功', '测试数据': 'username=15797890689,password=1240055602CAI', '期望结果': '成功', '备注': '登录功能测试', '描述': '登录功能测试'}" ]
+      }, {
+        "name" : "test_run[run_case0]",
+        "uid" : "17beefd78bc0896e",
+        "parentUid" : "d1198808313aaf048428147c1f1c8169",
+        "status" : "broken",
+        "time" : {
+          "start" : 1589161429651,
+          "stop" : 1589161429651,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13766667777,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}" ]
       } ],
-      "uid" : "f407e9014ace9324b3c79076bacb2035"
+      "uid" : "d1198808313aaf048428147c1f1c8169"
     } ],
     "uid" : "b7cd87cc76931d8f4b7cec9c2554c77b"
   } ]

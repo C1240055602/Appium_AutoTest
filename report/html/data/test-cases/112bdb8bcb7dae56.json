@@ -1,0 +1,249 @@
+{
+  "uid" : "112bdb8bcb7dae56",
+  "name" : "Case_002-登录成功",
+  "fullName" : "testcase.TestKeywords.TestKeyword#test_run[run_case1]",
+  "historyId" : "8d5dfeb10adbb2d95195a9139c95dbbf",
+  "time" : {
+    "start" : 1589161131647,
+    "stop" : 1589161162392,
+    "duration" : 30745
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: type object 'TestKeyword' has no attribute 'driver'",
+  "statusTrace" : "self = <class 'testcase.TestKeywords.TestKeyword'>\n\n    def teardown_class(self):\n>       self.driver.quit()\nE       AttributeError: type object 'TestKeyword' has no attribute 'driver'\n\ntestcase\\TestKeywords.py:50: AttributeError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589161119854,
+      "stop" : 1589161119854,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "start_appium_desired",
+    "time" : {
+      "start" : 1589161092990,
+      "stop" : 1589161119854,
+      "duration" : 26864
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1589161092990,
+      "stop" : 1589161092990,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "AttributeError: type object 'TestKeyword' has no attribute 'driver'",
+    "statusTrace" : "self = <class 'testcase.TestKeywords.TestKeyword'>\n\n    def teardown_class(self):\n>       self.driver.quit()\nE       AttributeError: type object 'TestKeyword' has no attribute 'driver'\n\ntestcase\\TestKeywords.py:50: AttributeError",
+    "steps" : [ {
+      "name" : "点击暂不需要",
+      "time" : {
+        "start" : 1589161133843,
+        "stop" : 1589161134823,
+        "duration" : 980
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "点击我的",
+      "time" : {
+        "start" : 1589161134825,
+        "stop" : 1589161137035,
+        "duration" : 2210
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "切换密码登录",
+      "time" : {
+        "start" : 1589161137038,
+        "stop" : 1589161138329,
+        "duration" : 1291
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "输入用户名",
+      "time" : {
+        "start" : 1589161138330,
+        "stop" : 1589161140139,
+        "duration" : 1809
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "输入密码",
+      "time" : {
+        "start" : 1589161140141,
+        "stop" : 1589161141217,
+        "duration" : 1076
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "点击登录",
+      "time" : {
+        "start" : 1589161141219,
+        "stop" : 1589161141764,
+        "duration" : 545
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "结果验证",
+      "time" : {
+        "start" : 1589161141765,
+        "stop" : 1589161162391,
+        "duration" : 20626
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "67f4f0cc7c440669",
+      "name" : "log",
+      "source" : "67f4f0cc7c440669.txt",
+      "type" : "text/plain",
+      "size" : 3566
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 7
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589161162756,
+      "stop" : 1589161162759,
+      "duration" : 3
+    },
+    "status" : "broken",
+    "statusMessage" : "AttributeError: type object 'TestKeyword' has no attribute 'driver'\n",
+    "statusTrace" : "  File \"C:\\Users\\cjj\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\allure_commons\\_allure.py\", line 169, in __call__\n    return self._fixture_function(*args, **kwargs)\n  File \"C:\\Users\\cjj\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\_pytest\\fixtures.py\", line 802, in _teardown_yield_fixture\n    next(it)\n  File \"C:\\Users\\cjj\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\_pytest\\python.py\", line 765, in xunit_setup_class_fixture\n    _call_with_optional_argument(func, self.obj)\n  File \"C:\\Users\\cjj\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\_pytest\\python.py\", line 702, in _call_with_optional_argument\n    func(arg)\n  File \"C:\\Users\\cjj\\PycharmProjects\\Appium_AutoTest\\testcase\\TestKeywords.py\", line 50, in teardown_class\n    self.driver.quit()\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登录功能测试"
+  }, {
+    "name" : "story",
+    "value" : "登录功能测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "TestKeywords"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestKeyword"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-0LL74L3"
+  }, {
+    "name" : "thread",
+    "value" : "14172-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.TestKeywords"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "run_case",
+    "value" : "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', '是否运行': 'y', '用例名称': '登录成功', '测试数据': 'username=13718418220,password=112233', '期望结果': '成功', '备注': '登录功能测试', '描述': '登录功能测试'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "112bdb8bcb7dae56.json",
+  "parameterValues" : [ "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', '是否运行': 'y', '用例名称': '登录成功', '测试数据': 'username=13718418220,password=112233', '期望结果': '成功', '备注': '登录功能测试', '描述': '登录功能测试'}" ]
+}

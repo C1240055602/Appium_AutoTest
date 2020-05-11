@@ -1,5 +1,5 @@
 {
-  "uid" : "369a60a6cb894789",
+  "uid" : "26a282452db45668",
   "name" : "Case_001-登录失败",
   "fullName" : "testcase.TestKeywords.TestKeyword#test_run[run_case0]",
   "historyId" : "1b1458eb6c9578bbae1b78493d33e22c",
@@ -11,7 +11,7 @@
   "status" : "failed",
   "statusMessage" : "AssertionError",
   "statusTrace" : "self = <testcase.TestKeywords.TestKeyword object at 0x00000185A67463A0>\nstart_appium_desired = <appium.webdriver.webdriver.WebDriver (session=\"eaa39386-c55e-425c-8c14-e69a7619d6ff\")>\nrun_case = {'CASE_ID': 'Case_001', 'TC_ID': 'TC_Login', '备注': '登录功能测试', '描述': '登录功能测试', ...}\n\n    @pytest.mark.parametrize(\"run_case\", run_list)\n    def test_run(self, start_appium_desired, run_case):\n        self.driver = start_appium_desired\n        self.driver.launch_app()\n        log.info(\"执行用例内容:{}\".format(run_case))\n>       Operate(self.driver).step(data, run_case)\n\ntestcase\\TestKeywords.py:44: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbase\\BaseAction.py:126: in get_err_screenshot\n    raise e\nbase\\BaseAction.py:120: in get_err_screenshot\n    func(self, *args, **kwargs)\ntestcase\\operate\\KeywordOperatePytest.py:153: in step\n    action_method(**param_value)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base.BaseAction.Action object at 0x00000185A67B8C40>\nkwargs = {'by': 'xpath', 'expect': '密码错误', 'value': './/*[starts-with(@text,\"帐户\")]'}\ntoast_result = True\n\n    def assert_toast_result(self, **kwargs):\n        toast_result = self.is_toast_exist(**kwargs)\n        # assert toast_result\n>       assert toast_result == False\nE       AssertionError\n\nbase\\BaseAction.py:103: AssertionError",
-  "flaky" : true,
+  "flaky" : false,
   "beforeStages" : [ {
     "name" : "_Class__pytest_setup_class",
     "time" : {
@@ -23,10 +23,10 @@
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
-    "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
   }, {
     "name" : "start_appium_desired",
     "time" : {
@@ -38,10 +38,10 @@
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
-    "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
   }, {
     "name" : "cmdopt",
     "time" : {
@@ -53,10 +53,10 @@
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
-    "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
   } ],
   "testStage" : {
     "status" : "failed",
@@ -73,10 +73,10 @@
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "点击我的",
       "time" : {
@@ -88,10 +88,10 @@
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "切换密码登录",
       "time" : {
@@ -103,10 +103,10 @@
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "输入用户名",
       "time" : {
@@ -118,10 +118,10 @@
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "输入密码",
       "time" : {
@@ -133,10 +133,10 @@
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "点击登录",
       "time" : {
@@ -148,10 +148,10 @@
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "结果验证",
       "time" : {
@@ -165,29 +165,29 @@
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : true
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ {
-      "uid" : "6cf2bf2ad8711e22",
+      "uid" : "1dde25452d1398e2",
       "name" : "2020-05-10 20:39:46",
-      "source" : "6cf2bf2ad8711e22.png",
+      "source" : "1dde25452d1398e2.png",
       "type" : "image/png",
       "size" : 196048
     }, {
-      "uid" : "db7629d39efc0d22",
+      "uid" : "6e9f6b2ba4eff65",
       "name" : "log",
-      "source" : "db7629d39efc0d22.txt",
+      "source" : "6e9f6b2ba4eff65.txt",
       "type" : "text/plain",
       "size" : 4532
     } ],
     "parameters" : [ ],
-    "stepsCount" : 7,
-    "hasContent" : true,
     "attachmentsCount" : 2,
-    "shouldDisplayMessage" : true
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 7
   },
   "afterStages" : [ {
     "name" : "_Class__pytest_setup_class::0",
@@ -202,10 +202,10 @@
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
-    "hasContent" : true,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : true
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
   } ],
   "labels" : [ {
     "name" : "feature",
@@ -246,36 +246,12 @@
     "value" : "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}"
   } ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "63083cc2ad6855aa",
-      "status" : "failed",
-      "statusDetails" : "AssertionError",
-      "time" : {
-        "start" : 1589114304927,
-        "stop" : 1589114317288,
-        "duration" : 12361
-      }
-    }, {
-      "uid" : "75c1ee717d0b1251",
-      "status" : "failed",
-      "statusDetails" : "AssertionError",
-      "time" : {
-        "start" : 1589098268339,
-        "stop" : 1589098276783,
-        "duration" : 8444
-      }
-    } ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
+    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "369a60a6cb894789.json",
+  "source" : "26a282452db45668.json",
   "parameterValues" : [ "{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13718418220,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}" ]
 }

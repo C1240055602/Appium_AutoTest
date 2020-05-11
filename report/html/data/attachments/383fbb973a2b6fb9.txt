@@ -1,0 +1,35 @@
+INFO     start_appium:StartAppium.py:83 获取的devices信息udid:['192.168.49.101:5555']
+INFO     start_appium:StartAppium.py:23 port 4723 is not used
+INFO     start_appium:StartAppium.py:40 
+INFO     start_appium:StartAppium.py:40 [35m[Appium][39m Welcome to Appium v1.17.0
+INFO     start_appium:StartAppium.py:40 [35m[Appium][39m Non-default server args:
+INFO     start_appium:StartAppium.py:40 [35m[Appium][39m   allowInsecure: {
+INFO     start_appium:StartAppium.py:40 [35m[Appium][39m   }
+INFO     start_appium:StartAppium.py:40 [35m[Appium][39m   denyInsecure: {
+INFO     start_appium:StartAppium.py:40 [35m[Appium][39m   }
+INFO     start_appium:StartAppium.py:40 [35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4723
+INFO     start_appium:StartAppium.py:45 启动成功：启动参数是：host为127.0.0.1,port为4723,bpport为4724,udid为192.168.49.101:5555
+INFO     start_appium:StartAppium.py:19 port 4723 is used!
+INFO     TestKeywords:TestKeywords.py:43 执行用例内容:{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', '是否运行': 'y', '用例名称': '登录失败', '测试数据': 'username=13766667777,password=123456', '期望结果': '密码错误', '备注': '登录功能测试', '描述': '登录功能测试'}
+DEBUG    operate:KeywordOperatePytest.py:117 执行步骤{'TC_ID': 'TC_Login', '步骤ID': 'TS001', '步骤名称': '点击暂不需要', '操作': 'click', '元素名称': 'El_allow_button', '数据': ''}
+DEBUG    operate:KeywordOperatePytest.py:121 元素信息{'TC_ID': 'TC_Login', '元素名称': 'El_allow_button', '定位类型': 'id', '元素信息': 'com.boxuegu:id/negative_button'}
+DEBUG    operate:KeywordOperatePytest.py:132 该关键字是click_btn
+DEBUG    operate:KeywordOperatePytest.py:117 执行步骤{'TC_ID': 'TC_Login', '步骤ID': 'TS002', '步骤名称': '点击我的', '操作': 'click', '元素名称': 'EL_tab_me', '数据': ''}
+DEBUG    operate:KeywordOperatePytest.py:121 元素信息{'TC_ID': 'TC_Login', '元素名称': 'EL_tab_me', '定位类型': 'xpath', '元素信息': '//*[starts-with(@text,"我的")]'}
+DEBUG    operate:KeywordOperatePytest.py:132 该关键字是click_btn
+DEBUG    operate:KeywordOperatePytest.py:117 执行步骤{'TC_ID': 'TC_Login', '步骤ID': 'TS003', '步骤名称': '切换密码登录', '操作': 'click', '元素名称': 'EL_passwd_btn', '数据': ''}
+DEBUG    operate:KeywordOperatePytest.py:121 元素信息{'TC_ID': 'TC_Login', '元素名称': 'EL_passwd_btn', '定位类型': 'id', '元素信息': 'com.boxuegu:id/passwordLoginTv'}
+DEBUG    operate:KeywordOperatePytest.py:132 该关键字是click_btn
+DEBUG    operate:KeywordOperatePytest.py:117 执行步骤{'TC_ID': 'TC_Login', '步骤ID': 'TS004', '步骤名称': '输入用户名', '操作': 'text', '元素名称': 'El_username', '数据': 'username'}
+DEBUG    operate:KeywordOperatePytest.py:121 元素信息{'TC_ID': 'TC_Login', '元素名称': 'El_username', '定位类型': 'id', '元素信息': 'com.boxuegu:id/edit_usr'}
+DEBUG    operate:KeywordOperatePytest.py:132 该关键字是send_keys
+DEBUG    operate:KeywordOperatePytest.py:117 执行步骤{'TC_ID': 'TC_Login', '步骤ID': 'TS005', '步骤名称': '输入密码', '操作': 'text', '元素名称': 'El_password', '数据': 'password'}
+DEBUG    operate:KeywordOperatePytest.py:121 元素信息{'TC_ID': 'TC_Login', '元素名称': 'El_password', '定位类型': 'id', '元素信息': 'com.boxuegu:id/edit_pwd'}
+DEBUG    operate:KeywordOperatePytest.py:132 该关键字是send_keys
+DEBUG    operate:KeywordOperatePytest.py:117 执行步骤{'TC_ID': 'TC_Login', '步骤ID': 'TS006', '步骤名称': '点击登录', '操作': 'click', '元素名称': 'login_btn', '数据': ''}
+DEBUG    operate:KeywordOperatePytest.py:121 元素信息{'TC_ID': 'TC_Login', '元素名称': 'login_btn', '定位类型': 'id', '元素信息': 'com.boxuegu:id/btn_login'}
+DEBUG    operate:KeywordOperatePytest.py:132 该关键字是click_btn
+DEBUG    operate:KeywordOperatePytest.py:117 执行步骤{'TC_ID': 'TC_Login', '步骤ID': 'TS007', '步骤名称': '结果验证', '操作': 'verify_toast', '元素名称': 'El_login_toast', '数据': ''}
+DEBUG    operate:KeywordOperatePytest.py:121 元素信息{'TC_ID': 'TC_Login', '元素名称': 'El_login_toast', '定位类型': 'xpath', '元素信息': './/*[starts-with(@text,"帐户")]'}
+DEBUG    operate:KeywordOperatePytest.py:132 该关键字是assert_toast_result
+ERROR    Base_Page:BaseAction.py:86 toast获取失败，错误信息：Message:

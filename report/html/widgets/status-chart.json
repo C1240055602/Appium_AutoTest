@@ -1,11 +1,21 @@
 [ {
-  "uid" : "369a60a6cb894789",
-  "name" : "Case_001-登录失败",
+  "uid" : "2b90617a989194a0",
+  "name" : "test_run[run_case1]",
   "time" : {
-    "start" : 1589114374144,
-    "stop" : 1589114386310,
-    "duration" : 12166
+    "start" : 1589161429660,
+    "stop" : 1589161429660,
+    "duration" : 0
   },
-  "status" : "failed",
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "17beefd78bc0896e",
+  "name" : "test_run[run_case0]",
+  "time" : {
+    "start" : 1589161429651,
+    "stop" : 1589161429651,
+    "duration" : 0
+  },
+  "status" : "broken",
   "severity" : "normal"
 } ]

@@ -1,0 +1,137 @@
+2020-05-11 09:38:12,966 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡TestCases±í²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'ĞòºÅ': 1.0, 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'TC_ID': 'TC_Login', 'ÊÇ·ñÔËĞĞ': 'y', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-11 09:38:12,972 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡CaseDataÔËĞĞ²âÊÔ¸öÊı2£¬Êı¾İÄÚÈİ[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13718418220,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}, {'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼³É¹¦', '²âÊÔÊı¾İ': 'username=13718418220,password=112233', 'ÆÚÍû½á¹û': '³É¹¦', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-11 09:38:12,977 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡TestCases±í²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'ĞòºÅ': 1.0, 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'TC_ID': 'TC_Login', 'ÊÇ·ñÔËĞĞ': 'y', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-11 09:38:12,981 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡CaseDataÔËĞĞ²âÊÔ¸öÊı2£¬Êı¾İÄÚÈİ[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13718418220,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}, {'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼³É¹¦', '²âÊÔÊı¾İ': 'username=13718418220,password=112233', 'ÆÚÍû½á¹û': '³É¹¦', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-11 09:38:13,023 - start_appium - INFO - »ñÈ¡µÄdevicesĞÅÏ¢udid:['192.168.49.101:5555']
+2020-05-11 09:38:15,026 - start_appium - INFO - port 4723 is not used
+2020-05-11 09:38:15,141 - start_appium - INFO - 
+2020-05-11 09:38:25,295 - start_appium - INFO - [35m[Appium][39m Welcome to Appium v1.17.0
+2020-05-11 09:38:25,296 - start_appium - INFO - [35m[Appium][39m Non-default server args:
+2020-05-11 09:38:25,296 - start_appium - INFO - [35m[Appium][39m   allowInsecure: {
+2020-05-11 09:38:25,296 - start_appium - INFO - [35m[Appium][39m   }
+2020-05-11 09:38:25,296 - start_appium - INFO - [35m[Appium][39m   denyInsecure: {
+2020-05-11 09:38:25,297 - start_appium - INFO - [35m[Appium][39m   }
+2020-05-11 09:38:25,328 - start_appium - INFO - [35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4723
+2020-05-11 09:38:25,329 - start_appium - INFO - Æô¶¯³É¹¦£ºÆô¶¯²ÎÊıÊÇ£ºhostÎª127.0.0.1,portÎª4723,bpportÎª4724,udidÎª192.168.49.101:5555
+2020-05-11 09:38:30,329 - start_appium - INFO - port 4723 is used!
+2020-05-11 09:38:42,683 - TestKeywords - INFO - Ö´ĞĞÓÃÀıÄÚÈİ:{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13718418220,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}
+2020-05-11 09:38:42,687 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS001', '²½ÖèÃû³Æ': 'µã»÷Ôİ²»ĞèÒª', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'El_allow_button', 'Êı¾İ': ''}
+2020-05-11 09:38:42,693 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_allow_button', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/negative_button'}
+2020-05-11 09:38:42,694 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:38:43,076 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS002', '²½ÖèÃû³Æ': 'µã»÷ÎÒµÄ', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'EL_tab_me', 'Êı¾İ': ''}
+2020-05-11 09:38:43,077 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'EL_tab_me', '¶¨Î»ÀàĞÍ': 'xpath', 'ÔªËØĞÅÏ¢': '//*[starts-with(@text,"ÎÒµÄ")]'}
+2020-05-11 09:38:43,079 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:38:45,002 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS003', '²½ÖèÃû³Æ': 'ÇĞ»»ÃÜÂëµÇÂ¼', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'EL_passwd_btn', 'Êı¾İ': ''}
+2020-05-11 09:38:45,003 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'EL_passwd_btn', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/passwordLoginTv'}
+2020-05-11 09:38:45,003 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:38:46,262 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS004', '²½ÖèÃû³Æ': 'ÊäÈëÓÃ»§Ãû', '²Ù×÷': 'text', 'ÔªËØÃû³Æ': 'El_username', 'Êı¾İ': 'username'}
+2020-05-11 09:38:46,262 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_username', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/edit_usr'}
+2020-05-11 09:38:46,263 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇsend_keys
+2020-05-11 09:38:47,918 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS005', '²½ÖèÃû³Æ': 'ÊäÈëÃÜÂë', '²Ù×÷': 'text', 'ÔªËØÃû³Æ': 'El_password', 'Êı¾İ': 'password'}
+2020-05-11 09:38:47,919 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_password', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/edit_pwd'}
+2020-05-11 09:38:47,920 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇsend_keys
+2020-05-11 09:38:48,983 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS006', '²½ÖèÃû³Æ': 'µã»÷µÇÂ¼', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'login_btn', 'Êı¾İ': ''}
+2020-05-11 09:38:48,984 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'login_btn', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/btn_login'}
+2020-05-11 09:38:48,986 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:38:50,189 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS007', '²½ÖèÃû³Æ': '½á¹ûÑéÖ¤', '²Ù×÷': 'verify_toast', 'ÔªËØÃû³Æ': 'El_login_toast', 'Êı¾İ': ''}
+2020-05-11 09:38:50,190 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_login_toast', '¶¨Î»ÀàĞÍ': 'xpath', 'ÔªËØĞÅÏ¢': './/*[starts-with(@text,"ÕÊ»§")]'}
+2020-05-11 09:38:50,190 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇassert_toast_result
+2020-05-11 09:38:50,269 - Base_Page - INFO - »ñÈ¡toastÄÚÈİÎª£ºÕËºÅ»òÃÜÂë´íÎó
+2020-05-11 09:38:53,840 - TestKeywords - INFO - Ö´ĞĞÓÃÀıÄÚÈİ:{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼³É¹¦', '²âÊÔÊı¾İ': 'username=13718418220,password=112233', 'ÆÚÍû½á¹û': '³É¹¦', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}
+2020-05-11 09:38:53,841 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS001', '²½ÖèÃû³Æ': 'µã»÷Ôİ²»ĞèÒª', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'El_allow_button', 'Êı¾İ': ''}
+2020-05-11 09:38:53,841 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_allow_button', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/negative_button'}
+2020-05-11 09:38:53,842 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:38:54,824 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS002', '²½ÖèÃû³Æ': 'µã»÷ÎÒµÄ', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'EL_tab_me', 'Êı¾İ': ''}
+2020-05-11 09:38:54,824 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'EL_tab_me', '¶¨Î»ÀàĞÍ': 'xpath', 'ÔªËØĞÅÏ¢': '//*[starts-with(@text,"ÎÒµÄ")]'}
+2020-05-11 09:38:54,825 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:38:57,034 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS003', '²½ÖèÃû³Æ': 'ÇĞ»»ÃÜÂëµÇÂ¼', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'EL_passwd_btn', 'Êı¾İ': ''}
+2020-05-11 09:38:57,035 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'EL_passwd_btn', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/passwordLoginTv'}
+2020-05-11 09:38:57,037 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:38:58,328 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS004', '²½ÖèÃû³Æ': 'ÊäÈëÓÃ»§Ãû', '²Ù×÷': 'text', 'ÔªËØÃû³Æ': 'El_username', 'Êı¾İ': 'username'}
+2020-05-11 09:38:58,328 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_username', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/edit_usr'}
+2020-05-11 09:38:58,329 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇsend_keys
+2020-05-11 09:39:00,139 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS005', '²½ÖèÃû³Æ': 'ÊäÈëÃÜÂë', '²Ù×÷': 'text', 'ÔªËØÃû³Æ': 'El_password', 'Êı¾İ': 'password'}
+2020-05-11 09:39:00,139 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_password', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/edit_pwd'}
+2020-05-11 09:39:00,141 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇsend_keys
+2020-05-11 09:39:01,217 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS006', '²½ÖèÃû³Æ': 'µã»÷µÇÂ¼', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'login_btn', 'Êı¾İ': ''}
+2020-05-11 09:39:01,217 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'login_btn', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/btn_login'}
+2020-05-11 09:39:01,219 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:39:01,763 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS007', '²½ÖèÃû³Æ': '½á¹ûÑéÖ¤', '²Ù×÷': 'verify_toast', 'ÔªËØÃû³Æ': 'El_login_toast', 'Êı¾İ': ''}
+2020-05-11 09:39:01,764 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_login_toast', '¶¨Î»ÀàĞÍ': 'xpath', 'ÔªËØĞÅÏ¢': './/*[starts-with(@text,"ÕÊ»§")]'}
+2020-05-11 09:39:01,764 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇassert_toast_result
+2020-05-11 09:39:22,391 - Base_Page - ERROR - toast»ñÈ¡Ê§°Ü£¬´íÎóĞÅÏ¢£ºMessage: 
+
+2020-05-11 09:39:24,852 - allure_generate - INFO - ±¨¸æµØÖ·C:\Users\cjj\PycharmProjects\Appium_AutoTest\report\result
+2020-05-11 09:39:28,214 - allure_generate - INFO - ±¨¸æµØÖ·C:\Users\cjj\PycharmProjects\Appium_AutoTest\report\html
+2020-05-11 09:42:29,172 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡TestCases±í²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'ĞòºÅ': 1.0, 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'TC_ID': 'TC_Login', 'ÊÇ·ñÔËĞĞ': 'y', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-11 09:42:29,176 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡CaseDataÔËĞĞ²âÊÔ¸öÊı2£¬Êı¾İÄÚÈİ[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13766667777,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}, {'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼³É¹¦', '²âÊÔÊı¾İ': 'username=15797890689,password=1240055602CAI', 'ÆÚÍû½á¹û': '³É¹¦', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-11 09:42:29,180 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡TestCases±í²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'ĞòºÅ': 1.0, 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'TC_ID': 'TC_Login', 'ÊÇ·ñÔËĞĞ': 'y', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-11 09:42:29,184 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡CaseDataÔËĞĞ²âÊÔ¸öÊı2£¬Êı¾İÄÚÈİ[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13766667777,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}, {'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼³É¹¦', '²âÊÔÊı¾İ': 'username=15797890689,password=1240055602CAI', 'ÆÚÍû½á¹û': '³É¹¦', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-11 09:42:29,220 - start_appium - INFO - »ñÈ¡µÄdevicesĞÅÏ¢udid:['192.168.49.101:5555']
+2020-05-11 09:42:29,220 - start_appium - INFO - port 4723 is used!
+2020-05-11 09:42:36,223 - start_appium - INFO - port 4723 is not used
+2020-05-11 09:42:38,709 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡TestCases±í²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'ĞòºÅ': 1.0, 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'TC_ID': 'TC_Login', 'ÊÇ·ñÔËĞĞ': 'y', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-11 09:42:38,712 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡CaseDataÔËĞĞ²âÊÔ¸öÊı2£¬Êı¾İÄÚÈİ[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13766667777,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}, {'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼³É¹¦', '²âÊÔÊı¾İ': 'username=15797890689,password=1240055602CAI', 'ÆÚÍû½á¹û': '³É¹¦', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-11 09:42:38,716 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡TestCases±í²âÊÔ¸öÊı1£¬Êı¾İÄÚÈİ[{'ĞòºÅ': 1.0, 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'TC_ID': 'TC_Login', 'ÊÇ·ñÔËĞĞ': 'y', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-11 09:42:38,720 - C:\Users\cjj\PycharmProjects\Appium_AutoTest\utils\LogUtil.py - DEBUG - »ñÈ¡CaseDataÔËĞĞ²âÊÔ¸öÊı2£¬Êı¾İÄÚÈİ[{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13766667777,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}, {'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼³É¹¦', '²âÊÔÊı¾İ': 'username=15797890689,password=1240055602CAI', 'ÆÚÍû½á¹û': '³É¹¦', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}]
+2020-05-11 09:42:38,754 - start_appium - INFO - »ñÈ¡µÄdevicesĞÅÏ¢udid:['192.168.49.101:5555']
+2020-05-11 09:42:40,757 - start_appium - INFO - port 4723 is not used
+2020-05-11 09:42:40,787 - start_appium - INFO - 
+2020-05-11 09:42:49,055 - start_appium - INFO - [35m[Appium][39m Welcome to Appium v1.17.0
+2020-05-11 09:42:49,056 - start_appium - INFO - [35m[Appium][39m Non-default server args:
+2020-05-11 09:42:49,056 - start_appium - INFO - [35m[Appium][39m   allowInsecure: {
+2020-05-11 09:42:49,057 - start_appium - INFO - [35m[Appium][39m   }
+2020-05-11 09:42:49,057 - start_appium - INFO - [35m[Appium][39m   denyInsecure: {
+2020-05-11 09:42:49,057 - start_appium - INFO - [35m[Appium][39m   }
+2020-05-11 09:42:49,080 - start_appium - INFO - [35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4723
+2020-05-11 09:42:49,080 - start_appium - INFO - Æô¶¯³É¹¦£ºÆô¶¯²ÎÊıÊÇ£ºhostÎª127.0.0.1,portÎª4723,bpportÎª4724,udidÎª192.168.49.101:5555
+2020-05-11 09:42:54,080 - start_appium - INFO - port 4723 is used!
+2020-05-11 09:43:05,461 - TestKeywords - INFO - Ö´ĞĞÓÃÀıÄÚÈİ:{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_001', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼Ê§°Ü', '²âÊÔÊı¾İ': 'username=13766667777,password=123456', 'ÆÚÍû½á¹û': 'ÃÜÂë´íÎó', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}
+2020-05-11 09:43:05,472 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS001', '²½ÖèÃû³Æ': 'µã»÷Ôİ²»ĞèÒª', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'El_allow_button', 'Êı¾İ': ''}
+2020-05-11 09:43:05,479 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_allow_button', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/negative_button'}
+2020-05-11 09:43:05,480 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:43:06,637 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS002', '²½ÖèÃû³Æ': 'µã»÷ÎÒµÄ', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'EL_tab_me', 'Êı¾İ': ''}
+2020-05-11 09:43:06,637 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'EL_tab_me', '¶¨Î»ÀàĞÍ': 'xpath', 'ÔªËØĞÅÏ¢': '//*[starts-with(@text,"ÎÒµÄ")]'}
+2020-05-11 09:43:06,639 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:43:07,352 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS003', '²½ÖèÃû³Æ': 'ÇĞ»»ÃÜÂëµÇÂ¼', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'EL_passwd_btn', 'Êı¾İ': ''}
+2020-05-11 09:43:07,352 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'EL_passwd_btn', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/passwordLoginTv'}
+2020-05-11 09:43:07,353 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:43:08,836 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS004', '²½ÖèÃû³Æ': 'ÊäÈëÓÃ»§Ãû', '²Ù×÷': 'text', 'ÔªËØÃû³Æ': 'El_username', 'Êı¾İ': 'username'}
+2020-05-11 09:43:08,836 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_username', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/edit_usr'}
+2020-05-11 09:43:08,837 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇsend_keys
+2020-05-11 09:43:10,521 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS005', '²½ÖèÃû³Æ': 'ÊäÈëÃÜÂë', '²Ù×÷': 'text', 'ÔªËØÃû³Æ': 'El_password', 'Êı¾İ': 'password'}
+2020-05-11 09:43:10,521 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_password', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/edit_pwd'}
+2020-05-11 09:43:10,522 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇsend_keys
+2020-05-11 09:43:11,597 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS006', '²½ÖèÃû³Æ': 'µã»÷µÇÂ¼', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'login_btn', 'Êı¾İ': ''}
+2020-05-11 09:43:11,597 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'login_btn', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/btn_login'}
+2020-05-11 09:43:11,599 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:43:12,151 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS007', '²½ÖèÃû³Æ': '½á¹ûÑéÖ¤', '²Ù×÷': 'verify_toast', 'ÔªËØÃû³Æ': 'El_login_toast', 'Êı¾İ': ''}
+2020-05-11 09:43:12,152 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_login_toast', '¶¨Î»ÀàĞÍ': 'xpath', 'ÔªËØĞÅÏ¢': './/*[starts-with(@text,"ÕÊ»§")]'}
+2020-05-11 09:43:12,152 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇassert_toast_result
+2020-05-11 09:43:33,041 - Base_Page - ERROR - toast»ñÈ¡Ê§°Ü£¬´íÎóĞÅÏ¢£ºMessage: 
+
+2020-05-11 09:43:37,655 - TestKeywords - INFO - Ö´ĞĞÓÃÀıÄÚÈİ:{'TC_ID': 'TC_Login', 'CASE_ID': 'Case_002', 'ÊÇ·ñÔËĞĞ': 'y', 'ÓÃÀıÃû³Æ': 'µÇÂ¼³É¹¦', '²âÊÔÊı¾İ': 'username=15797890689,password=1240055602CAI', 'ÆÚÍû½á¹û': '³É¹¦', '±¸×¢': 'µÇÂ¼¹¦ÄÜ²âÊÔ', 'ÃèÊö': 'µÇÂ¼¹¦ÄÜ²âÊÔ'}
+2020-05-11 09:43:37,655 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS001', '²½ÖèÃû³Æ': 'µã»÷Ôİ²»ĞèÒª', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'El_allow_button', 'Êı¾İ': ''}
+2020-05-11 09:43:37,655 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_allow_button', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/negative_button'}
+2020-05-11 09:43:37,656 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:43:38,510 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS002', '²½ÖèÃû³Æ': 'µã»÷ÎÒµÄ', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'EL_tab_me', 'Êı¾İ': ''}
+2020-05-11 09:43:38,510 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'EL_tab_me', '¶¨Î»ÀàĞÍ': 'xpath', 'ÔªËØĞÅÏ¢': '//*[starts-with(@text,"ÎÒµÄ")]'}
+2020-05-11 09:43:38,512 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:43:40,626 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS003', '²½ÖèÃû³Æ': 'ÇĞ»»ÃÜÂëµÇÂ¼', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'EL_passwd_btn', 'Êı¾İ': ''}
+2020-05-11 09:43:40,626 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'EL_passwd_btn', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/passwordLoginTv'}
+2020-05-11 09:43:40,627 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:43:42,578 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS004', '²½ÖèÃû³Æ': 'ÊäÈëÓÃ»§Ãû', '²Ù×÷': 'text', 'ÔªËØÃû³Æ': 'El_username', 'Êı¾İ': 'username'}
+2020-05-11 09:43:42,578 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_username', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/edit_usr'}
+2020-05-11 09:43:42,580 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇsend_keys
+2020-05-11 09:43:43,165 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS005', '²½ÖèÃû³Æ': 'ÊäÈëÃÜÂë', '²Ù×÷': 'text', 'ÔªËØÃû³Æ': 'El_password', 'Êı¾İ': 'password'}
+2020-05-11 09:43:43,165 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_password', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/edit_pwd'}
+2020-05-11 09:43:43,166 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇsend_keys
+2020-05-11 09:43:44,336 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS006', '²½ÖèÃû³Æ': 'µã»÷µÇÂ¼', '²Ù×÷': 'click', 'ÔªËØÃû³Æ': 'login_btn', 'Êı¾İ': ''}
+2020-05-11 09:43:44,336 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'login_btn', '¶¨Î»ÀàĞÍ': 'id', 'ÔªËØĞÅÏ¢': 'com.boxuegu:id/btn_login'}
+2020-05-11 09:43:44,337 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇclick_btn
+2020-05-11 09:43:44,886 - operate - DEBUG - Ö´ĞĞ²½Öè{'TC_ID': 'TC_Login', '²½ÖèID': 'TS007', '²½ÖèÃû³Æ': '½á¹ûÑéÖ¤', '²Ù×÷': 'verify_toast', 'ÔªËØÃû³Æ': 'El_login_toast', 'Êı¾İ': ''}
+2020-05-11 09:43:44,886 - operate - DEBUG - ÔªËØĞÅÏ¢{'TC_ID': 'TC_Login', 'ÔªËØÃû³Æ': 'El_login_toast', '¶¨Î»ÀàĞÍ': 'xpath', 'ÔªËØĞÅÏ¢': './/*[starts-with(@text,"ÕÊ»§")]'}
+2020-05-11 09:43:44,886 - operate - DEBUG - ¸Ã¹Ø¼ü×ÖÊÇassert_toast_result
+2020-05-11 09:43:47,735 - Base_Page - INFO - »ñÈ¡toastÄÚÈİÎª£ºµÇÂ¼³É¹¦!
+2020-05-11 09:43:51,686 - allure_generate - INFO - ±¨¸æµØÖ·C:\Users\cjj\PycharmProjects\Appium_AutoTest\report\result
+2020-05-11 09:43:54,494 - allure_generate - INFO - ±¨¸æµØÖ·C:\Users\cjj\PycharmProjects\Appium_AutoTest\report\html

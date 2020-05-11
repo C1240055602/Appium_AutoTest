@@ -1,2 +1,3 @@
 "Status","Name","Duration in ms","Description"
-"failed","testcase.TestKeywords.TestKeyword#test_run[run_case0]","12166",""
+"broken","testcase.TestKeywords.TestKeyword#test_run[run_case1]","0",""
+"broken","testcase.TestKeywords.TestKeyword#test_run[run_case0]","0",""
