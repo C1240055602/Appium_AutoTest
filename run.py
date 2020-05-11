@@ -12,23 +12,25 @@ if __name__ == '__main__':
     # host="127.0.0.1",port="4723",bpport="4724",udid=None
     # --cmdopt 字典
     # 并发测试
-    # cmdopt = {"host": "127.0.0.1",
-    #           "port": "4723",
-    #           "bpport": "4724",
-    #           "udid": "192.168.49.101:5555",
-    #           "systemPort": 8200}
-    # pytest.main([f"--cmdopt={cmdopt}", "--alluredir", report_path])
     cmdopt = {"host": "127.0.0.1",
               "port": "4723",
               "bpport": "4724",
-              "udid": "192.168.49.101:5555"}
-    pytest.main([f"--cmdopt={cmdopt}"])
+              "udid": "192.168.49.101:5555",
+              "systemPort": 8200}
+    pytest.main([f"--cmdopt={cmdopt}", "--alluredir", report_path])
+
+    pytest.main()
     time.sleep(2)
     allure_generate(report_path, report_html)
-    time.sleep(3)
-    send_mail(content="测试完成，请查看测试报告")
+    # time.sleep(3)
+    # send_mail(content="测试完成，请查看测试报告")
 
-    # pytest.main()
+    # # 原版无Jenkins
+    # cmdopt = {"host": "127.0.0.1",
+    #           "port": "4723",
+    #           "bpport": "4724",
+    #           "udid": "192.168.49.101:5555"}
+    # pytest.main([f"--cmdopt={cmdopt}"])
     # time.sleep(2)
     # allure_generate(report_path, report_html)
     # time.sleep(3)
