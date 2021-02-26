@@ -1,5 +1,5 @@
 adbutils==0.6.2
-aiohttp==3.5.4
+aiohttp==3.7.4
 allure-pytest==2.6.4
 allure-python-commons==2.6.4
 Appium-Python-Client==0.47
