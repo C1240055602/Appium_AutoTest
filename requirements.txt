@@ -48,7 +48,7 @@ paramiko==2.5.0
 parso==0.4.0
 pexpect==4.7.0
 pickleshare==0.7.5
-pillow==7.1.2
+pillow==8.2.0
 pluggy==0.11.0
 proglog==0.1.9
 progress==1.5
